@@ -1,0 +1,152 @@
+{
+  "meta": {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "layers": 28,
+    "d_model": 1536,
+    "selected_layer": 16,
+    "categories": [
+      "cybercrime_intrusion",
+      "illegal",
+      "misinformation_disinformation",
+      "chemical_biological"
+    ],
+    "n_per_category": 28,
+    "n_val": 8,
+    "seed": 20261024,
+    "max_new_tokens": 48,
+    "n_null_draws": 300,
+    "timestamp_utc": "2026-10-24T15:18:07.479060",
+    "harmful_source": "https://raw.githubusercontent.com/centerforaisafety/HarmBench/main/data/behavior_datasets/harmbench_behaviors_text_all.csv",
+    "harmless_source": "https://raw.githubusercontent.com/tatsu-lab/stanford_alpaca/main/alpaca_data.json",
+    "reference": "Arditi et al. 2024, arXiv:2406.11717"
+  },
+  "layer_sweep": {
+    "7": 0.96875,
+    "8": 0.90625,
+    "9": 0.9375,
+    "10": 0.9375,
+    "11": 0.40625,
+    "12": 0.625,
+    "13": 0.46875,
+    "14": 0.09375,
+    "15": 0.03125,
+    "16": 0.0,
+    "17": 0.0625,
+    "18": 0.0625,
+    "19": 0.0625,
+    "20": 0.0,
+    "21": 0.0,
+    "22": 0.0,
+    "23": 0.0
+  },
+  "baseline_refusal_harmful": 0.96875,
+  "baseline_refusal_harmless": 0.03125,
+  "cosine_real": [
+    [
+      1.0,
+      0.8892530798912048,
+      0.5429612994194031,
+      0.8988653421401978
+    ],
+    [
+      0.8892530798912048,
+      1.0,
+      0.6230732798576355,
+      0.9169579744338989
+    ],
+    [
+      0.5429612994194031,
+      0.6230732798576355,
+      0.9999999403953552,
+      0.5662506818771362
+    ],
+    [
+      0.8988653421401978,
+      0.9169579744338989,
+      0.5662506818771362,
+      0.9999999403953552
+    ]
+  ],
+  "cosine_real_offdiag_mean": 0.7395603060722351,
+  "null_mean": 0.965145468711853,
+  "null_ci95": [
+    0.9428483843803406,
+    0.9792263507843018
+  ],
+  "p_null_le_real": 0.0,
+  "cosine_effect_size": 0.22558516263961792,
+  "test_calibration": {
+    "null true (one shared direction)": {
+      "reject_rate": 0.06666666666666667,
+      "mean_effect": 9.233256423613057e-05
+    },
+    "weak structure": {
+      "reject_rate": 1.0,
+      "mean_effect": 0.02802126854658127
+    },
+    "strong structure": {
+      "reject_rate": 1.0,
+      "mean_effect": 0.8145650625228882
+    }
+  },
+  "transfer_matrix": [
+    [
+      1.0,
+      1.0,
+      1.0,
+      0.875
+    ],
+    [
+      0.0,
+      0.125,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.75,
+      0.5,
+      0.125,
+      0.75
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "transfer_row_labels": [
+    "no ablation",
+    "cyber",
+    "illegal",
+    "misinfo",
+    "chem/bio",
+    "POOLED"
+  ],
+  "transfer_col_labels": [
+    "cyber",
+    "illegal",
+    "misinfo",
+    "chem/bio"
+  ],
+  "transfer_gap": 0.14583333333333334,
+  "induced_refusal": {
+    "cybercrime_intrusion": 0.8125,
+    "illegal": 1.0,
+    "misinformation_disinformation": 0.5625,
+    "chemical_biological": 0.875,
+    "POOLED": 0.875
+  }
+}
