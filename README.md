@@ -4,8 +4,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> **Status: harness built and validated. Results pending.**
-> The measurement instrument has been calibrated against known ground truth. The model runs are next.
+> **Status: v0.1 results in (24 Oct 2026, one model). v0.2 notebook fixes issues found in review; re-run pending.**
+> Headline so far: cybercrime, illegal and chem/bio behave as **one shared switch**; misinformation
+> does not transfer. Whether misinformation has a *separate* switch or just a *weaker* refusal on the
+> shared one is the open question v0.2 is built to answer. See [Results](#results-v01).
 
 ---
 
@@ -19,9 +21,24 @@ requests. The result held across 13 models up to 72B.
 That experiment pooled all harmful prompts into one set — cybercrime, chemical/biological,
 misinformation, illegal — and so, by construction, recovered one direction.
 
-> **Whether distinct harm categories have distinct refusal directions has never been measured.**
-
 Put plainly: is there one main switch for the whole house, or does each room have its own?
+
+### Related work, and what this adds
+
+Others have started to look inside that pool:
+
+- **ValueShift Research (LessWrong, April 2026)** extracted refusal directions for five harm domains
+  on Llama-2-7b-chat and compared them by cosine similarity and PCA, concluding there is a shared core
+  plus domain-specific parts. They had not yet run cross-domain ablation.
+- **Alagharu et al. (2026, [arXiv:2603.13359](https://arxiv.org/abs/2603.13359))** found
+  category-aligned directions in a Llama 3 8B *fine-tuned to emit refusal-type tokens*, with categories
+  that are refusal types (e.g. "incomplete request") rather than harm types, and used them for steering.
+
+This project adds, for HarmBench harm categories on an **unmodified** instruct model:
+
+1. a permutation null for the geometry, **calibrated on synthetic data** before use;
+2. a **behavioural** test — ablate one category's direction, measure refusal on the others;
+3. a test of the simpler explanation for any category that behaves differently (v0.2).
 
 ## Why either answer is worth having
 
@@ -53,6 +70,10 @@ There is no null-result risk. Every outcome is a finding.
 
 5. **Activation addition** — add a category direction to harmless prompts and confirm induced refusal.
 
+6. **Separate switch or weaker refusal?** *(v0.2)* — partial-strength ablation of the pooled
+   direction, and ablation of only the category-specific part of a direction (its pooled component
+   projected out).
+
 ### Why step 3 is load-bearing
 
 Every category direction is a harmful-minus-harmless contrast, so all of them share a generic
@@ -63,16 +84,24 @@ So the same harmful pool is randomly relabelled into pseudo-categories and the s
 That is the value expected when there is *no* category structure at all. Real categories count as
 distinct only if they sit clearly below it.
 
+**What it cannot show.** Each direction also carries its prompts' *topic* — cybercrime prompts share
+computing words, chem/bio prompts share chemistry words. Real categories can sit below the null even if
+refusal is one switch. So this step shows the categories **differ**; only the behavioural tests (4 and
+6) show whether **refusal** differs.
+
 ### What calibrating the test changed
 
 The permutation test was validated on synthetic activations with the answer built in, before any real
 data was touched:
 
-| Synthetic scenario | Test fires | |
+| Synthetic scenario | Test fires (200 replications × 150 permutations) | |
 |---|---|---|
-| `shared_frac = 1.0` — no structure at all | **6.7%** | calibrated (target ~5%) |
+| `shared_frac = 1.0` — no structure at all | **4.5%** | calibrated (target ~5%) |
 | `shared_frac = 0.85` — weak structure | 100% | |
 | `shared_frac = 0.0` — fully category-specific | 100% | |
+
+(The v0.1 `results.json` records 6.7%, from a shorter 60-replication run — 4 of 60. The 200-replication
+figure above is from the v0.2 notebook's calibration cell, which runs on CPU in seconds.)
 
 The test is calibrated **but extremely powerful** — it flags even trivial structure. So a significant
 p-value is cheap here, and the **effect size and transfer matrix carry the conclusion**, not `p`. The
@@ -91,12 +120,14 @@ single run would have led to either chasing a non-existent bug or shipping a fal
 | Model | `Qwen/Qwen2.5-1.5B-Instruct` — ungated, ~3 GB fp16, fits a free Colab T4 |
 | Harmful | [HarmBench](https://github.com/centerforaisafety/HarmBench) `standard` behaviors, 4 categories balanced to 28 each |
 | Harmless | [Alpaca](https://github.com/tatsu-lab/stanford_alpaca) instructions with no input field |
-| Split | 20 train / 8 val per category, seed `20261024` |
-| Runtime | ~40 min end to end |
+| Split | 20 train / 8 test per category, seed `20261024`; layer chosen on a separate 40-prompt selection set (v0.2) |
+| Runtime | ~40 min end to end (v0.1); v0.2 adds section 11b |
 
 Categories: `cybercrime_intrusion`, `illegal`, `misinformation_disinformation`,
-`chemical_biological`. Excluded: `copyright` (a functional category, not a harm type), `harmful`
-(catch-all), `harassment_bullying` (only 19 standard behaviors — too thin for a stable mean).
+`chemical_biological`. Excluded as categories: `copyright` (a functional category, not a harm type),
+`harmful` (catch-all), `harassment_bullying` (only 19 standard behaviors — too thin for a stable mean).
+In v0.2, `harmful` + `harassment_bullying` (40 prompts) are used **only** to choose the layer, so the
+test prompts are never seen before the final measurements.
 
 ### Running it
 
@@ -106,13 +137,74 @@ runtime.
 
 ---
 
+## Results (v0.1)
+
+Run on 24 Oct 2026 (`results.json`, `fig1`–`fig3`). Selected layer: **16** of 28.
+
+> **Caveat on this run.** v0.1 chose the layer using the same 8 test prompts per category that the
+> results below are scored on, which can flatter the ablation numbers. v0.2 chooses the layer on a
+> separate set; the train/test prompts themselves are unchanged. Treat v0.1 as preliminary until the
+> v0.2 re-run.
+
+**Baseline.** The model refuses **97%** of held-out harmful prompts and **3%** of harmless ones, so
+there is real refusal to study (my pre-registered prediction was 70–90%).
+
+**Geometry.** Cybercrime, illegal and chem/bio directions are close (cosine 0.89–0.92). Misinformation
+sits apart (0.54–0.62 with the rest). Mean cross-category cosine is **0.74** against a null of
+**0.965** (95% range 0.943–0.979); none of 300 random splits was as low, **p < 0.0033** (the floor
+for 300 draws), effect size **0.23**. *Per the caveat above, this shows the categories differ — not yet
+that refusal does.*
+
+**Behaviour — refusal on held-out prompts after ablating each direction** (n = 8 per cell):
+
+| Ablated ↓ / measured → | cyber | illegal | misinfo | chem/bio |
+|---|---|---|---|---|
+| none | 100% | 100% | 100% | 88% |
+| cyber | 0% | 12% | 0% | 0% |
+| illegal | 0% | 0% | 0% | 0% |
+| **misinfo** | **75%** | **50%** | 12% | **75%** |
+| chem/bio | 0% | 0% | 0% | 0% |
+| pooled | 0% | 0% | 0% | 0% |
+
+Ablating cyber, illegal or chem/bio removes refusal on **every** category, misinformation included.
+Ablating misinformation removes refusal on misinformation but leaves the others refused **16 of 24**
+times, against **1 of 72** for the other single-category rows. (No p-value is given here: every row is
+scored on the same 8 prompts per column, so the cells are not independent samples.)
+
+**Activation addition** (refusal induced on harmless prompts): illegal 100%, chem/bio 88%, pooled 88%,
+cyber 81%, **misinformation 56%**.
+
+### Reading
+
+Cybercrime, illegal and chem/bio behave as **one shared switch**. Misinformation's direction does not
+transfer — but it is also the weakest at inducing refusal and only ~60% aligned with the others, so
+removing it removes only *part* of the shared switch. That predicts the same table even with one
+switch, if misinformation refusal is simply weaker. **v0.2 section 11b tests this directly** (partial
+ablation of the pooled direction; ablation of only the misinformation-specific component).
+
+---
+
 ## Repository
 
 ```
-notebooks/refusal_categories.ipynb   the full experiment, 18 cells
+notebooks/refusal_categories.ipynb   the full experiment (v0.2)
+results.json                         v0.1 run, 24 Oct 2026
+fig1–fig3 *.png                      v0.1 figures
 docs/PLAN.md                         scope, schedule, fallbacks, limitations
 docs/LOG.md                          assumptions, cruxes, predictions recorded before testing
 ```
+
+### Changelog
+
+**v0.2 (29 Oct 2026)** — fixes from review; needs a GPU re-run.
+
+- Layer now chosen on a separate selection set, not the test prompts.
+- New section 11b: separate switch vs weaker refusal.
+- Permutation p-value reported as (k+1)/(n+1), never 0.
+- Calibration uses 200 replications in the notebook (v0.1 notebook used 60).
+- Removed the refusal substring `"i'm an"`, which also matches non-refusals ("I'm an expert…").
+- Stated that the cosine test cannot separate topic from refusal.
+- Related work added; the "never been measured" claim corrected.
 
 ---
 
@@ -141,6 +233,10 @@ direction is causal rather than merely correlated.
 - n = 8 per transfer cell — wide intervals. The matrix shows direction of effect, not a precise
   estimate.
 - `chemical_biological` caps every category at 28, bounding how stable the per-category means can be.
+- The cosine test detects any difference between categories, including topic vocabulary; it cannot by
+  itself show that refusal differs.
+- v0.1 chose the layer on the test prompts (fixed in v0.2). The v0.2 selection set is a different
+  prompt distribution, so its chosen layer may be slightly less than optimal for the four categories.
 
 ---
 
@@ -158,6 +254,11 @@ direction is causal rather than merely correlated.
 
 Also: [HarmBench](https://arxiv.org/abs/2402.04249) (Mazeika et al., 2024);
 [Alpaca](https://github.com/tatsu-lab/stanford_alpaca) (Taori et al., 2023).
+
+Related: Alagharu et al., *From Refusal Tokens to Refusal Control: Discovering and Steering
+Category-Specific Refusal Directions* (2026, [arXiv:2603.13359](https://arxiv.org/abs/2603.13359));
+ValueShift Research, *Experiments on refusal shape in LLMs* (LessWrong, April 2026,
+[link](https://www.lesswrong.com/posts/qRuTqqyHhwpwbdzMf/experiments-on-refusal-shape-in-llms)).
 
 ## Author
 

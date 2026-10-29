@@ -14,7 +14,11 @@ appears on harmless prompts).
 That result **pooled all harmful prompts into one set** — cybercrime, chemical/biological,
 misinformation, illegal — and so by construction recovered one direction.
 
-> **Whether distinct harm categories have distinct refusal directions has never been measured.**
+> ~~Whether distinct harm categories have distinct refusal directions has never been measured.~~
+> *Corrected 29 Oct 2026:* per-domain directions have been compared geometrically (ValueShift
+> Research, LessWrong, Apr 2026) and found in a refusal-token fine-tuned model (Alagharu et al. 2026,
+> arXiv:2603.13359). What remains open, and what this project tests, is whether HarmBench harm
+> categories are separable **behaviourally** on an unmodified model, with a calibrated null.
 
 Both answers are findings, so there is no null-result risk:
 
@@ -50,7 +54,7 @@ changed how the result must be read:
 
 | Synthetic scenario | Test fires | Verdict |
 |---|---|---|
-| `shared_frac = 1.0` — no structure at all | **6.7%** | calibrated (should be ~5%) |
+| `shared_frac = 1.0` — no structure at all | **4.5%** (200 reps; 6.7% in the 60-rep v0.1 run) | calibrated (should be ~5%) |
 | `shared_frac = 0.85` — weak structure | 100% | |
 | `shared_frac = 0.0` — fully category-specific | 100% | |
 

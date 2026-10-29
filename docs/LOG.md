@@ -32,7 +32,7 @@ high-uncertainty ones.
 |---|---|---|---|
 | A7 | **The model refuses HarmBench prompts at a high enough baseline rate that there is something to ablate.** | **Highest — kills the project** | **High** — ← **primary crux** |
 | A8 | Refusal-substring matching is an adequate proxy for refusal at 48 generated tokens. | Medium | Medium — the paper uses 512 tokens; refusal phrases appear early, but a model could comply after a hedge. |
-| A9 | A permutation null over relabelled harmful prompts is the correct null for "no category structure". | **High** | Low — **tested**: calibrated at 6.7% false-positive rate on synthetic data. |
+| A9 | A permutation null over relabelled harmful prompts is the correct null for "no category structure". | **High** | Low — **tested**: calibrated at 4.5% false-positive rate on synthetic data (200 replications). |
 | A10 | Cosine similarity between directions is the right geometric statistic (vs. subspace angle, or a learned probe). | Medium | Medium — it is the simplest defensible choice; a subspace method is the obvious escalation. |
 
 ### About tools and resources
@@ -119,3 +119,29 @@ Also worth recording: on the first calibration attempt the detector flagged "cat
 data built with no structure at all. It looked like a bug. Running 200 replications showed the test
 was correctly calibrated and that first run was an unlucky seed. Had I run it once, I would either
 have "fixed" a non-bug or shipped a false result.
+
+**24 Oct 2026, v0.1 run** — Prediction check for A7: baseline refusal on held-out harmful was **97%**,
+above my 70–90% interval. The predicted ordering was partly right: misinformation was the weakest
+category, but on activation addition (56% induced refusal) rather than on baseline refusal, where all
+four were refused at 88–100%.
+
+**29 Oct 2026, review fixes (v0.2)** — A line-by-line review found:
+
+1. **The layer was chosen on the test prompts.** The same 8 held-out prompts per category were used to
+   pick layer 16 and then to score the transfer matrix. v0.2 picks the layer on a separate 40-prompt
+   set (`harmful` + `harassment_bullying`); train/test prompts are byte-identical to v0.1.
+2. **Misinformation has a simpler explanation I had not ruled out.** Its direction is only ~0.6
+   aligned with the others and is the weakest at inducing refusal. Ablating it removes *part* of a
+   shared switch — possibly enough for a weakly-refused category and not for the others. That would
+   produce the v0.1 table with only one switch. v0.2 section 11b tests this.
+3. **The cosine test cannot separate topic from refusal.** Categories differ in vocabulary, so they
+   will sit below the null regardless. The behavioural tests carry the claim.
+4. **p was reported as 0.** Now (k+1)/(n+1); with 300 draws the floor is 0.0033.
+5. **Replication count mismatch.** This log and the README said 200 calibration replications, but the
+   saved v0.1 notebook ran 60 (6.7% = 4/60). The v0.2 notebook runs 200 and gives **4.5%** — matching
+   the figure in the old code comment, so the 200-replication run happened; it just wasn't the version
+   saved. All docs now quote 4.5% (200 reps).
+6. **Refusal substring `"i'm an"`** also matches non-refusals; removed.
+
+Also corrected: the claim that per-category directions had "never been measured" (see PLAN.md and the
+README's related-work section).
