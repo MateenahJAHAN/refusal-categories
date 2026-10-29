@@ -145,3 +145,22 @@ four were refused at 88–100%.
 
 Also corrected: the claim that per-category directions had "never been measured" (see PLAN.md and the
 README's related-work section).
+
+**29 Oct 2026, v0.2 run (Colab T4)** — With the layer chosen on the selection set, layer **20** was
+picked (layers 20, 22 and 23 all reached 0% on the selection set; ties go to the earliest; layer 16
+gave 5%). At layer 20:
+
+- Geometry: mean cross-category cosine 0.839 vs null 0.983 (0/300 draws, p = 0.0033), effect 0.144.
+- Transfer: **every** direction, misinformation included, removes refusal on every category (all 0%).
+- Activation addition (harmless): cyber 53%, illegal 81%, misinfo 53%, chem/bio 53%, pooled 59%.
+- 11b check 1: misinformation pushes the pooled direction about half as hard (+17.8 vs +32 to +39).
+- 11b check 2: uninformative — even 25% pooled ablation gives 0% everywhere (floor effect).
+- 11b check 3: removing only the category-specific part leaves refusal intact for all four
+  (misinfo 100%), even though misinfo's specific part is 56% of its direction's length.
+- Calibration (200 reps): 4.5% false-positive rate.
+
+**So the headline flipped between layer 16 and layer 20.** That is not yet a result in either
+direction. Two worries: (a) the answer may depend on the layer; (b) at layer 20, "0% refusal" may be
+damaged output rather than removed refusal — substring scoring cannot tell the two apart, and 25%
+ablation zeroing everything is a warning sign. Added section 11c: repeat the key measurements at every
+candidate layer, with Arditi et al.'s KL < 0.1 check on harmless prompts.
