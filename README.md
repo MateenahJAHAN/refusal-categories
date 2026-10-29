@@ -4,10 +4,12 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> **Status: v0.1 results in (24 Oct 2026, one model). v0.2 notebook fixes issues found in review; re-run pending.**
-> Headline so far: cybercrime, illegal and chem/bio behave as **one shared switch**; misinformation
-> does not transfer. Whether misinformation has a *separate* switch or just a *weaker* refusal on the
-> shared one is the open question v0.2 is built to answer. See [Results](#results-v01).
+> **Status (29 Oct 2026): preliminary, one model.** The best-supported reading is **one shared refusal
+> switch, which misinformation prompts push about half as hard** — not a separate misinformation
+> switch. Removing only the misinformation-specific part of its direction never removed refusal, at any
+> of four candidate layers. **Open problem:** no candidate direction passes Arditi et al.'s KL < 0.1
+> check on harmless prompts, so the exact transfer numbers are not yet trustworthy. Next: the full
+> layer × position search. See [Results (v0.2)](#results-v02).
 
 ---
 
@@ -137,14 +139,62 @@ runtime.
 
 ---
 
-## Results (v0.1)
+## Results (v0.2)
 
-Run on 24 Oct 2026 (`results.json`, `fig1`–`fig3`). Selected layer: **16** of 28.
+Run on 29 Oct 2026, Colab T4. Layer chosen on the separate selection set: **20** (layers 20, 22, 23
+all reached 0% on it; ties go to the earliest; layer 16 gave 5%).
 
-> **Caveat on this run.** v0.1 chose the layer using the same 8 test prompts per category that the
-> results below are scored on, which can flatter the ablation numbers. v0.2 chooses the layer on a
-> separate set; the train/test prompts themselves are unchanged. Treat v0.1 as preliminary until the
-> v0.2 re-run.
+**Geometry.** Mean cross-category cosine **0.839** vs null **0.983** (95% range 0.971–0.990); 0 of 300
+random splits as low, **p = 0.0033** (the floor), effect **0.144**. Calibration: 4.5% false-positive
+rate over 200 replications.
+
+**Transfer at layer 20.** Every direction, misinformation's included, removed refusal on every
+category (all cells 0%). Activation addition on harmless prompts: cyber 53%, illegal 81%,
+misinformation 53%, chem/bio 53%, pooled 59%.
+
+**Separate switch or weaker refusal (section 11b, layer 20).**
+
+| Check | Result |
+|---|---|
+| How hard each category pushes the pooled direction | cyber +38.9, illegal +32.3, chem/bio +32.5, **misinfo +17.8** |
+| Partial pooled ablation (25 / 50 / 75%) | 0% everywhere — uninformative at this layer |
+| Ablate only the category-specific part | refusal stays: cyber 100%, illegal 100%, **misinfo 100%**, chem/bio 88% |
+
+**Robustness across layers (section 11c).**
+
+| Layer | KL on harmless (want < 0.1) | Ablate misinfo → others refused | Misinfo-specific part only → misinfo refused |
+|---|---|---|---|
+| 16 | 0.386 | 67% | 100% |
+| 20 | 1.677 | 0% | 100% |
+| 22 | 0.132 | 8% | 100% |
+| 23 | 0.150 | 4% | 100% |
+
+### Reading
+
+- **Solid across all four layers:** the misinformation-specific component carries no refusal of its
+  own. Misinformation refusal lives on the shared direction.
+- **Misinformation pushes that shared direction about half as hard** as the other categories. That
+  explains the v0.1 table: misinformation's direction only partly overlaps the shared one, so removing
+  it removes enough of the switch to stop the weak misinformation refusal, but not the stronger ones.
+- **Not yet trustworthy:** the exact transfer numbers. They swing with the layer (67% at 16, 0% at
+  20), and **no candidate passes the KL < 0.1 filter** — removing these directions also disturbs how
+  the model answers harmless questions, so some "0% refusal" may be damaged output rather than
+  removed refusal. Substring scoring cannot tell the two apart.
+- **Next:** search every layer × the last five post-instruction positions, as Arditi et al. do, keep
+  only directions passing KL, and re-run the misinformation tests on that direction. Then a second
+  model.
+
+---
+
+## Results (v0.1, superseded)
+
+Run on 24 Oct 2026 (`results.json`, `fig1`–`fig3` in this repo are from this run). Selected layer:
+**16** of 28. Kept for the record.
+
+> **Why superseded.** v0.1 chose the layer using the same 8 test prompts per category that the
+> results below are scored on, and its layer-16 direction fails the KL check (0.386). Its headline —
+> that misinformation does not transfer — is explained in v0.2 by misinformation's weaker refusal,
+> not a separate switch.
 
 **Baseline.** The model refuses **97%** of held-out harmful prompts and **3%** of harmless ones, so
 there is real refusal to study (my pre-registered prediction was 70–90%).
@@ -174,13 +224,11 @@ scored on the same 8 prompts per column, so the cells are not independent sample
 **Activation addition** (refusal induced on harmless prompts): illegal 100%, chem/bio 88%, pooled 88%,
 cyber 81%, **misinformation 56%**.
 
-### Reading
+### Reading (as of v0.1)
 
-Cybercrime, illegal and chem/bio behave as **one shared switch**. Misinformation's direction does not
-transfer — but it is also the weakest at inducing refusal and only ~60% aligned with the others, so
-removing it removes only *part* of the shared switch. That predicts the same table even with one
-switch, if misinformation refusal is simply weaker. **v0.2 section 11b tests this directly** (partial
-ablation of the pooled direction; ablation of only the misinformation-specific component).
+Cybercrime, illegal and chem/bio behaved as one shared switch; misinformation's direction did not
+transfer. v0.1 already noted this could be weaker refusal on one switch rather than a separate switch;
+v0.2 (above) supports the weaker-refusal reading.
 
 ---
 
@@ -188,7 +236,7 @@ ablation of the pooled direction; ablation of only the misinformation-specific c
 
 ```
 notebooks/refusal_categories.ipynb   the full experiment (v0.2)
-results.json                         v0.1 run, 24 Oct 2026
+results.json                         v0.1 run, 24 Oct 2026 (v0.2 numbers are in the README and LOG)
 fig1–fig3 *.png                      v0.1 figures
 docs/PLAN.md                         scope, schedule, fallbacks, limitations
 docs/LOG.md                          assumptions, cruxes, predictions recorded before testing
@@ -196,10 +244,12 @@ docs/LOG.md                          assumptions, cruxes, predictions recorded b
 
 ### Changelog
 
-**v0.2 (29 Oct 2026)** — fixes from review; needs a GPU re-run.
+**v0.2 (29 Oct 2026)** — fixes from review; run on Colab T4 the same day.
 
 - Layer now chosen on a separate selection set, not the test prompts.
 - New section 11b: separate switch vs weaker refusal.
+- New section 11c: misinformation tests repeated at every candidate layer, with Arditi et al.'s
+  KL < 0.1 check on harmless prompts. No candidate passed.
 - Permutation p-value reported as (k+1)/(n+1), never 0.
 - Calibration uses 200 replications in the notebook (v0.1 notebook used 60).
 - Removed the refusal substring `"i'm an"`, which also matches non-refusals ("I'm an expert…").
@@ -237,6 +287,9 @@ direction is causal rather than merely correlated.
   itself show that refusal differs.
 - v0.1 chose the layer on the test prompts (fixed in v0.2). The v0.2 selection set is a different
   prompt distribution, so its chosen layer may be slightly less than optimal for the four categories.
+- **No direction found so far passes the KL < 0.1 check.** Ablation also disturbs harmless behaviour,
+  and substring scoring cannot separate removed refusal from damaged output. Transfer numbers are
+  provisional until the full (layer, position) search finds a clean direction.
 
 ---
 

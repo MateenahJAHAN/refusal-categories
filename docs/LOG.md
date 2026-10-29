@@ -164,3 +164,22 @@ direction. Two worries: (a) the answer may depend on the layer; (b) at layer 20,
 damaged output rather than removed refusal — substring scoring cannot tell the two apart, and 25%
 ablation zeroing everything is a warning sign. Added section 11c: repeat the key measurements at every
 candidate layer, with Arditi et al.'s KL < 0.1 check on harmless prompts.
+
+**29 Oct 2026, 11c result** — Candidate layers (selection-set refusal ≤ 10%): 16, 20, 22, 23.
+
+| Layer | KL harmless | +pooled induces | Ablate misinfo → others refused | Misinfo-specific only → misinfo refused |
+|---|---|---|---|---|
+| 16 | 0.386 | 88% | 67% | 100% |
+| 20 | 1.677 | 59% | 0% | 100% |
+| 22 | 0.132 | 38% | 8% | 100% |
+| 23 | 0.150 | 75% | 4% | 100% |
+
+**No layer passes KL < 0.1.** Layer 20 (the v0.2 pick) is the worst at 1.68, so its "all 0%" table is
+the least trustworthy. What holds at every layer: removing only the misinformation-specific component
+never removes misinformation refusal. Together with misinformation's weaker push on the pooled
+direction (+17.8 vs +32 to +39), the best-supported reading is **one shared switch, weaker for
+misinformation** — not a separate switch. The transfer numbers stay provisional.
+
+Next: full search over layers × last five post-instruction positions with Arditi et al.'s filters
+(KL < 0.1, addition induces refusal, layer < 0.8·L), then re-run the misinformation tests on the
+chosen direction. Then a second model.
