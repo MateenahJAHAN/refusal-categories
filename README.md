@@ -325,3 +325,14 @@ October 2026.
 
 MIT — see [LICENSE](LICENSE). The datasets are the work of their original authors under their own
 licenses; this repository redistributes none of them.
+
+<!-- portfolio-navigation -->
+## Repository guide
+
+- **Code and notebooks** · [refusal_categories.ipynb](notebooks/refusal_categories.ipynb)
+- **Results** · [results.json](results.json)
+- **Figures and images** · [fig1_direction_similarity.png](fig1_direction_similarity.png), [fig2_transfer_matrix.png](fig2_transfer_matrix.png), [fig3_activation_addition.png](fig3_activation_addition.png)
+- **Documentation and notes** · [PUSH.md](PUSH.md), [docs](docs)
+
+<!-- /portfolio-navigation -->
+
