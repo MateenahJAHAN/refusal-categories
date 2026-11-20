@@ -1,6 +1,6 @@
-# BlueDot follow-up · Does wording trigger refusals on benign tasks?
+# Does wording trigger refusals on harmless tasks?
 
-**Pilot result.** Neither evaluated checkpoint explicitly refused any of these 24 short tasks under any of three labels. Changing the label produced no net change in correct answers versus plain wording on this bank. Several tasks still received incorrect answers.
+Qwen2.5-1.5B and Qwen3.5-4B made **zero explicit refusals across 144 completed trials**. Each model saw 24 harmless tasks in three wordings. Plain and risky-sounding wording produced the same number of correct answers for each model, though Qwen2.5 got different individual items right.
 
 ![Counts of explicit refusals and correct short answers](outcomes.png)
 
@@ -21,12 +21,12 @@ The 216 stored bank generations include 144 completed, analyzed outputs and 72 d
 
 The earlier BlueDot work posed a question about internal refusal mechanisms. This follow-up measures a narrower behavioral question about benign wording, with no activation intervention. The strongest next test is a larger independent set of plausible, open-ended benign requests, with paraphrases, model families, and a blinded rubric that separates refusal from low-quality answers.
 
-## Files and replay
+## Files
 
 - [Frozen protocol](protocol.md), [stimuli](cases.json), and [pre-inference manifest](freeze.json).
 - [Qwen2.5 amendment](AMENDMENT_QWEN25.md), [FP32 amendment](AMENDMENT_QWEN25_FP32.md), and [final fallback manifest](freeze_qwen25_fp32.json).
 - [Qwen3.5 raw outputs](raw_qwen35-4b.jsonl), [Qwen2.5 raw outputs](raw_qwen25-1.5b.jsonl), and [Qwen3 runtime diagnostic](raw_qwen3-4b.jsonl).
 - [Counts](outcomes.csv), [paired comparisons and flagged rows](results.json), and [artifact hashes](SHA256SUMS).
-- [Initial local inference runner](run.py), [fallback runner](run_qwen25.py), and [analysis](analyze.py). With Matplotlib installed, run `python3 analyze.py` to verify the records, recalculate endpoints, and redraw the figures from the saved outputs.
+- [Initial local inference runner](run.py), [fallback runner](run_qwen25.py), and [analysis](analyze.py). With Matplotlib installed, `python3 analyze.py` checks the records and rebuilds the tables and figures from the saved outputs.
 
-AI assistance was used for stimulus preparation, code, and design review. Claude Fable 5.2 reviewed the proposed controls. The stated results are actual Qwen completions generated locally.
+AI tools helped prepare the tasks and code. Claude Fable 5.2 reviewed the proposed controls.

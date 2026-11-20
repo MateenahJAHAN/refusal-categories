@@ -1,45 +1,38 @@
 # Does refusal decompose by harm category?
 
-An exploratory mechanistic-interpretability study of refusal-related representations in Qwen2.5-1.5B-Instruct, undertaken for the BlueDot Impact Project Sprint.
+In a BlueDot Impact Project Sprint study of Qwen2.5-1.5B-Instruct, the activation directions estimated for four harm categories were **less similar to each other than they were after shuffling the category labels**. The mean cosine similarity was 0.84, compared with 0.98 after shuffling (p = 0.0033, 300 permutations). Topic and wording could contribute to the difference.
 
-> **Corrected v0.2 results (29 October 2026).** All four candidates failed the harmless-prompt KL check added in a later robustness analysis. The mechanism remains unresolved. [Archived v0.2 measurements](https://huggingface.co/datasets/Mateenah/refusal-categories-results/blob/917856ed158f4dcb70ade8b5a49f0cf4accce71c/results_v0.2.json) · [When the check was added](https://github.com/MateenahJAHAN/refusal-categories/commit/cfed840211f54de0fd277e623e404918d8882a0b)
+<a id="kl-gate-replay"></a>
 
-## KL gate replay
+## Effect on harmless prompts
 
-The [executable check](quality_gate/check.py) applied the archived cutoff of KL < 0.1 to all four recorded benign-output measurements. Zero candidates passed. The criterion was added after candidate selection and inspection of the behavioral results. Those results leave the mechanism unresolved. [Input measurements](quality_gate/archived_kl.json) · [Replay output](quality_gate/replay.json)
+All four candidate layers exceeded the cutoff of 0.1 for changes in model predictions on harmless prompts. Their KL divergence values ranged from 0.13 to 1.68. The cutoff was added after the layers were selected and the behavioral results were inspected. The mechanism remains unresolved. [KL measurements](quality_gate/archived_kl.json) · [When the cutoff was added](https://github.com/MateenahJAHAN/refusal-categories/commit/cfed840211f54de0fd277e623e404918d8882a0b)
 
-![Four archived layers have benign-output KL from 0.1324 to 1.6765, above the 0.1 cutoff](quality_gate/archived_kl_gate.png)
+![KL divergence on harmless prompts for layers 16, 20, 22 and 23. All four exceed the cutoff.](quality_gate/archived_kl_gate.png)
 
-Run `python3 quality_gate/check.py` from the repository root. The report requires one finite, nonnegative KL measurement per archived layer and stops on incomplete or malformed input. The input contains only the four KL measurements extracted from the pinned v0.2 archive above, whose SHA-256 is `84c81a69e84b7b23856257811f9fa82e38b5406b74b7219b747be6e06fd93e55`.
+## Does wording trigger refusals on harmless tasks?
 
-## Behavioral follow-up · November 2026
+A separate experiment tested 24 harmless tasks in three wordings on Qwen2.5-1.5B and Qwen3.5-4B. It recorded **zero explicit refusals across 144 completed trials**. Some answers were still incorrect. [Wording experiment](followup_v1_benign_wording/README.md)
 
-A separate pilot tested 24 benign tasks under plain-language, risk-associated, and irrelevant labels on two evaluable checkpoints. Both models returned zero explicit refusals across the 144 completed trials. The follow-up includes a matched design, raw responses, failure diagnostics, and figures. [Read the experiment and results](followup_v1_benign_wording/README.md)
+![Refusals and correct answers by wording](followup_v1_benign_wording/outcomes.png)
 
-![BlueDot follow-up counts of refusals and correct short answers](followup_v1_benign_wording/outcomes.png)
+## Method and limits
 
-[Matched wording design](followup_v1_benign_wording/design.png)
+The first study builds on [Arditi et al. (NeurIPS 2024)](https://arxiv.org/abs/2406.11717). It compared the directions estimated for the four categories with directions estimated after shuffling the labels. Candidate selection and evaluation used separate prompts in the revised study, with eight test prompts per category. The behavioral test used one model and detected refusals by matching phrases, so a garbled answer could be misread as a change in refusal.
 
-## Question and design
+The October 24 run reused the same prompts for layer selection and evaluation. The revised results supersede that run. [Study plan](docs/PLAN.md) · [Change log](docs/LOG.md)
 
-This study asks whether refusal-related representations vary across four harm categories. It compared category-level geometry against a permutation null and evaluated behavior following interventions. V0.2 used a separate selection set and reserved eight prompts per category for behavioral evaluation. The general approach builds on [Arditi et al. (NeurIPS 2024)](https://arxiv.org/abs/2406.11717).
+## Files
 
-## What the corrected run supports
+- [Revised results (JSON)](https://huggingface.co/datasets/Mateenah/refusal-categories-results/blob/917856ed158f4dcb70ade8b5a49f0cf4accce71c/results_v0.2.json)
+- [Notebook](notebooks/refusal_categories.ipynb)
+- [October 24 results (JSON)](results.json)
+- [Saved KL check (JSON)](quality_gate/replay.json). From the repository root, run `python3 quality_gate/check.py` to reproduce it from the four recorded values.
 
-- **Category-associated geometry.** The observed mean cross-category cosine similarity was 0.8391, compared with a mean of 0.9829 under the permutation null. The add-one permutation p-value was 0.0033 across 300 permutations. Topic and wording can contribute to that difference.
-- **Interpretation limits.** The behavioral measurements used one model, repeated prompts across candidates, small held-out groups, and refusal-phrase scoring. The scoring could count degraded output as a change in refusal. The synthetic calibration characterizes the permutation test under the simulated conditions.
+The public files contain summary measurements. The first study used prompts from [HarmBench](https://arxiv.org/abs/2402.04249) and [Alpaca](https://github.com/tatsu-lab/stanford_alpaca).
 
-A future validation study would need a frozen protocol, topic-matched evaluation examples, and independent scoring of output quality. An independent model would be needed for a cross-model claim.
+## Use of AI tools
 
-## Research artifacts
-
-| Artifact | Contents |
-| --- | --- |
-| [Corrected v0.2 results](https://huggingface.co/datasets/Mateenah/refusal-categories-results/blob/917856ed158f4dcb70ade8b5a49f0cf4accce71c/results_v0.2.json) | Dated measurements and recorded quality checks |
-| [Source notebook](notebooks/refusal_categories.ipynb) | Versioned study code |
-| [Historical v0.1 results](results.json) and the unsuffixed figures | The 24 October run, superseded because candidate selection reused the evaluation prompts |
-| [Study plan](docs/PLAN.md) and [log](docs/LOG.md) | Design history, assumptions, and changes |
-
-The public artifacts contain aggregate measurements. The project evaluated prompts from [HarmBench](https://arxiv.org/abs/2402.04249) and [Alpaca](https://github.com/tatsu-lab/stanford_alpaca).
+The wording experiment used AI assistance in preparing tasks and code and in reviewing the design. [Wording study documentation](followup_v1_benign_wording/README.md)
 
 [MIT license](LICENSE)
