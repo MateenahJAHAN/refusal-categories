@@ -1,0 +1,28 @@
+{
+  "criterion": "kl < 0.1",
+  "criterion_timing": "retrospective",
+  "per_layer": [
+    {
+      "layer": 16,
+      "kl": 0.38612911105155945,
+      "passes": false
+    },
+    {
+      "layer": 20,
+      "kl": 1.6765162944793701,
+      "passes": false
+    },
+    {
+      "layer": 22,
+      "kl": 0.13235393166542053,
+      "passes": false
+    },
+    {
+      "layer": 23,
+      "kl": 0.14990368485450745,
+      "passes": false
+    }
+  ],
+  "eligible_layers": [],
+  "mechanism": "unresolved"
+}
