@@ -8,6 +8,8 @@ An exploratory mechanistic-interpretability study of refusal-related representat
 
 The [executable check](quality_gate/check.py) applied the archived cutoff of KL < 0.1 to all four recorded benign-output measurements. Zero candidates passed. The criterion was added after candidate selection and inspection of the behavioral results. Those results leave the mechanism unresolved. [Input measurements](quality_gate/archived_kl.json) · [Replay output](quality_gate/replay.json)
 
+![Four archived layers have benign-output KL from 0.1324 to 1.6765, above the 0.1 cutoff](quality_gate/archived_kl_gate.png)
+
 Run `python3 quality_gate/check.py` from the repository root. The report requires one finite, nonnegative KL measurement per archived layer and stops on incomplete or malformed input. The input contains only the four KL measurements extracted from the pinned v0.2 archive above, whose SHA-256 is `84c81a69e84b7b23856257811f9fa82e38b5406b74b7219b747be6e06fd93e55`.
 
 ## Behavioral follow-up · November 2026
