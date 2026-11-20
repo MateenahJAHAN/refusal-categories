@@ -2,11 +2,15 @@
 
 An exploratory mechanistic-interpretability study of refusal-related representations in Qwen2.5-1.5B-Instruct, undertaken for the BlueDot Impact Project Sprint.
 
-> **Corrected v0.2 results (29 October 2026).** All four candidate directions failed the prespecified quality check on harmless prompts. The study did not establish either a shared or a category-specific refusal mechanism. [Archived v0.2 measurements](https://huggingface.co/datasets/Mateenah/refusal-categories-results/blob/917856ed158f4dcb70ade8b5a49f0cf4accce71c/results_v0.2.json)
+> **Corrected v0.2 results (29 October 2026).** All four candidates failed the harmless-prompt KL check added in a later robustness analysis. The mechanism remains unresolved. [Archived v0.2 measurements](https://huggingface.co/datasets/Mateenah/refusal-categories-results/blob/917856ed158f4dcb70ade8b5a49f0cf4accce71c/results_v0.2.json) · [When the check was added](https://github.com/MateenahJAHAN/refusal-categories/commit/cfed840211f54de0fd277e623e404918d8882a0b)
 
 ## Behavioral follow-up · November 2026
 
 A separate pilot tested 24 benign tasks under plain-language, risk-associated, and irrelevant labels on two evaluable checkpoints. Both models returned zero explicit refusals across the 144 completed trials. The follow-up includes a matched design, raw responses, failure diagnostics, and figures. [Read the experiment and results](followup_v1_benign_wording/README.md)
+
+![BlueDot follow-up counts of refusals and correct short answers](followup_v1_benign_wording/outcomes.png)
+
+[Matched wording design](followup_v1_benign_wording/design.png)
 
 ## Question and design
 
