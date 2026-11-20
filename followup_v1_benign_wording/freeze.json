@@ -1,0 +1,29 @@
+{
+  "frozen_utc": "2026-11-20T06:27:53.005130+00:00",
+  "sha256": {
+    "cases.json": "a5b555f233b3096ca5576df778bdbf1dd9fa322c2865ff5b2a386e205fb03414",
+    "run.py": "2981a1754b463a7c0d2515c492b6c3623083b861221f81e02a7ef263d59f285a",
+    "protocol.md": "5145f5495ecd481af404fe83ed4324081339f8a7eb0a5de2f5911519d7a8fbb2",
+    "qwen3_non_thinking.jinja": "60412e5486c2a5700dc80771d8d5b6203b579500281bf611f48b1b722fd24eeb"
+  },
+  "models": {
+    "qwen3-4b": {
+      "port": 8781,
+      "checkpoint": "Ollama qwen3:4b",
+      "artifact_sha256": "3e4cb14174460404e7a233e531675303b2fbf7749c02f91864fe311ab6344e4f"
+    },
+    "qwen35-4b": {
+      "port": 8780,
+      "checkpoint": "unsloth/Qwen3.5-4B-GGUF, e87f1764, UD-Q4_K_XL",
+      "artifact_sha256": "b252c5610a42ca82d20fe2a12813e9d069eed89292907e26c783eeb0bc961bc7"
+    }
+  },
+  "options": {
+    "temperature": 0,
+    "seed": 20261120,
+    "max_tokens": 28,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  }
+}
