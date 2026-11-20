@@ -1,0 +1,14 @@
+{
+  "frozen_utc": "2026-11-20T06:32:29.739355+00:00",
+  "model": "qwen25-1.5b",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "backend": "mps",
+  "dtype": "float32",
+  "torch": "2.15.0",
+  "transformers": "5.2.0",
+  "weight_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "tokenizer_sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+  "original_freeze_sha256": "13bc23e5ae24cf5bb69d20c50d6bd6050bd2328f58e24c3e689fb0a60639fc80",
+  "amendment_sha256": "32bd54d273ee5a47c85a588fcc66890ed8d8e465c2f65d076788089655b1ba04",
+  "runner_sha256": "1728bb4b6179cbeecc81976940e3c533fa91597ae7f573141878823001880026"
+}

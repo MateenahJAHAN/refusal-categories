@@ -13,8 +13,8 @@ from run import CONDITIONS, OPTIONS, ROOT, SYSTEM, classify, frozen_hashes, mess
 MODEL = "qwen25-1.5b"
 REVISION = "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
 OUTPUT = ROOT / f"raw_{MODEL}.jsonl"
-MANIFEST = ROOT / "freeze_qwen25.json"
-CONTROLS = ROOT / "qwen25_runtime_controls.json"
+MANIFEST = ROOT / "freeze_qwen25_fp32.json"
+CONTROLS = ROOT / "qwen25_runtime_controls_fp32.json"
 DEVICE = "mps"
 
 
@@ -25,12 +25,12 @@ def file_hash(path: Path) -> str:
 
 def manifest(model_dir: Path) -> dict:
     return {
-        "model": MODEL, "revision": REVISION, "backend": DEVICE,
+        "model": MODEL, "revision": REVISION, "backend": DEVICE, "dtype": "float32",
         "torch": str(torch.__version__), "transformers": transformers_version,
         "weight_sha256": file_hash(model_dir / "model.safetensors"),
         "tokenizer_sha256": file_hash(model_dir / "tokenizer_config.json"),
         "original_freeze_sha256": file_hash(ROOT / "freeze.json"),
-        "amendment_sha256": file_hash(ROOT / "AMENDMENT_QWEN25.md"),
+        "amendment_sha256": file_hash(ROOT / "AMENDMENT_QWEN25_FP32.md"),
         "runner_sha256": file_hash(ROOT / "run_qwen25.py"),
     }
 
@@ -66,7 +66,7 @@ def main() -> None:
         raise SystemExit("Expected the recorded MPS runtime.")
     tokenizer = AutoTokenizer.from_pretrained(args.model_dir, local_files_only=True, trust_remote_code=False)
     model = AutoModelForCausalLM.from_pretrained(
-        args.model_dir, local_files_only=True, trust_remote_code=False, dtype=torch.float16, attn_implementation="eager"
+        args.model_dir, local_files_only=True, trust_remote_code=False, dtype=torch.float32, attn_implementation="eager"
     ).to(DEVICE).eval()
 
     if not CONTROLS.exists():

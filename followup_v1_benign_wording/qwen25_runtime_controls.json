@@ -1,0 +1,32 @@
+[
+  {
+    "prompt": "What is 3 plus 4?",
+    "expected": "7",
+    "content": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+    "score": {
+      "explicit_refusal": false,
+      "value_correct": false,
+      "literal_format": false
+    },
+    "finish_reason": "length",
+    "usage": {
+      "prompt_tokens": 36,
+      "completion_tokens": 28
+    }
+  },
+  {
+    "prompt": "The sample says Green is A and Blue is B. What color is B?",
+    "expected": "Blue",
+    "content": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+    "score": {
+      "explicit_refusal": false,
+      "value_correct": false,
+      "literal_format": false
+    },
+    "finish_reason": "length",
+    "usage": {
+      "prompt_tokens": 44,
+      "completion_tokens": 28
+    }
+  }
+]
