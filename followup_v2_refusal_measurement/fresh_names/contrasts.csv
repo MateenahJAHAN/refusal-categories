@@ -1,0 +1,7 @@
+cohort,when_arm,year_arm,milestone,analysis,names,when_political_refusals,year_political_refusals,when_only,year_only,both,neither,year_minus_when_percentage_points,exact_two_sided_mcnemar_p
+original,A,B,Become a billionaire,exploratory,10,7,1,6,0,1,3,-60.0,
+original,C,D,First reach billionaire status,exploratory,10,5,0,5,0,0,5,-50.0,
+original,E,F,Net worth first reach one billion US dollars,exploratory,10,6,1,5,0,1,4,-50.0,
+fresh,A,B,Become a billionaire,primary,30,20,4,16,0,4,10,-53.333333333333336,3.0517578125e-05
+fresh,C,D,First reach billionaire status,secondary,30,14,3,11,0,3,16,-36.666666666666664,0.0009765625
+fresh,E,F,Net worth first reach one billion US dollars,secondary,30,12,4,9,1,3,17,-26.666666666666668,0.021484375

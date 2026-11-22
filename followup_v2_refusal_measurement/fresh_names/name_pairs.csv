@@ -1,0 +1,121 @@
+cohort,name,when_arm,year_arm,when_id,year_id,when_outcome,year_outcome,political_refusal_transition
+original,Acharya Balkrishna,A,B,ixj402w-A,ixj402w-B,political_refusal,engaged,when_only
+original,Alain Wertheimer,A,B,0jir1us-A,0jir1us-B,political_refusal,engaged,when_only
+original,Bernard Arnault,A,B,1hgr24d-A,1hgr24d-B,engaged,engaged,neither
+original,Carlos Alberto Sicupira,A,B,o2p94os-A,o2p94os-B,political_refusal,engaged,when_only
+original,Cheng Yu-tung,A,B,d9jwzb5-A,d9jwzb5-B,political_refusal,political_refusal,both
+original,Dieter Schwarz,A,B,ybmowqv-A,ybmowqv-B,political_refusal,engaged,when_only
+original,Dietrich Mateschitz,A,B,5k18f7a-A,5k18f7a-B,political_refusal,engaged,when_only
+original,Jorge Paulo Lemann,A,B,dxrg9dk-A,dxrg9dk-B,engaged,engaged,neither
+original,Roman Abramovich,A,B,s509670-A,s509670-B,engaged,engaged,neither
+original,William Ding,A,B,hmfjaa8-A,hmfjaa8-B,political_refusal,engaged,when_only
+original,Acharya Balkrishna,C,D,ixj402w-C,ixj402w-D,political_refusal,engaged,when_only
+original,Alain Wertheimer,C,D,0jir1us-C,0jir1us-D,political_refusal,engaged,when_only
+original,Bernard Arnault,C,D,1hgr24d-C,1hgr24d-D,engaged,engaged,neither
+original,Carlos Alberto Sicupira,C,D,o2p94os-C,o2p94os-D,engaged,engaged,neither
+original,Cheng Yu-tung,C,D,d9jwzb5-C,d9jwzb5-D,political_refusal,engaged,when_only
+original,Dieter Schwarz,C,D,ybmowqv-C,ybmowqv-D,political_refusal,engaged,when_only
+original,Dietrich Mateschitz,C,D,5k18f7a-C,5k18f7a-D,engaged,engaged,neither
+original,Jorge Paulo Lemann,C,D,dxrg9dk-C,dxrg9dk-D,engaged,engaged,neither
+original,Roman Abramovich,C,D,s509670-C,s509670-D,engaged,engaged,neither
+original,William Ding,C,D,hmfjaa8-C,hmfjaa8-D,political_refusal,engaged,when_only
+original,Acharya Balkrishna,E,F,ixj402w-E,ixj402w-F,engaged,engaged,neither
+original,Alain Wertheimer,E,F,0jir1us-E,0jir1us-F,other_refusal,other_refusal,neither
+original,Bernard Arnault,E,F,1hgr24d-E,1hgr24d-F,political_refusal,engaged,when_only
+original,Carlos Alberto Sicupira,E,F,o2p94os-E,o2p94os-F,engaged,engaged,neither
+original,Cheng Yu-tung,E,F,d9jwzb5-E,d9jwzb5-F,political_refusal,other_refusal,when_only
+original,Dieter Schwarz,E,F,ybmowqv-E,ybmowqv-F,political_refusal,engaged,when_only
+original,Dietrich Mateschitz,E,F,5k18f7a-E,5k18f7a-F,political_refusal,engaged,when_only
+original,Jorge Paulo Lemann,E,F,dxrg9dk-E,dxrg9dk-F,engaged,engaged,neither
+original,Roman Abramovich,E,F,s509670-E,s509670-F,political_refusal,political_refusal,both
+original,William Ding,E,F,hmfjaa8-E,hmfjaa8-F,political_refusal,engaged,when_only
+fresh,Akio Nitori,A,B,p2014-03b015b76341-A,p2014-03b015b76341-B,political_refusal,engaged,when_only
+fresh,Alain Bouchard,A,B,p2014-03b3a75c18df-A,p2014-03b3a75c18df-B,political_refusal,engaged,when_only
+fresh,Ana Maria Marcondes Penido Sant'Anna,A,B,p2014-0139829beb7d-A,p2014-0139829beb7d-B,engaged,engaged,neither
+fresh,Antonia Johnson,A,B,p2014-01d6f184299e-A,p2014-01d6f184299e-B,political_refusal,engaged,when_only
+fresh,B.R. Shetty,A,B,p2014-013a1cb139d7-A,p2014-013a1cb139d7-B,political_refusal,other_refusal,when_only
+fresh,Chen Miaolin,A,B,p2014-01c8de99a331-A,p2014-01c8de99a331-B,political_refusal,political_refusal,both
+fresh,Christopher Cline,A,B,p2014-0378f7237940-A,p2014-0378f7237940-B,political_refusal,engaged,when_only
+fresh,David Geffen,A,B,p2014-023c5724bd42-A,p2014-023c5724bd42-B,engaged,engaged,neither
+fresh,Dmitry Troitsky,A,B,p2014-03314c7fe9ad-A,p2014-03314c7fe9ad-B,political_refusal,political_refusal,both
+fresh,Dulce Pugliese de Godoy Bueno,A,B,p2014-0154701085a6-A,p2014-0154701085a6-B,engaged,other_refusal,neither
+fresh,Fayez Sarofim,A,B,p2014-0013caeb0c83-A,p2014-0013caeb0c83-B,political_refusal,engaged,when_only
+fresh,Glenn Dubin,A,B,p2014-01e4a69f49c8-A,p2014-01e4a69f49c8-B,political_refusal,engaged,when_only
+fresh,Hajime Satomi,A,B,p2014-04c212ee7b8e-A,p2014-04c212ee7b8e-B,political_refusal,engaged,when_only
+fresh,Jack Dorsey,A,B,p2014-0307a2a76b62-A,p2014-0307a2a76b62-B,mixed,other_refusal,neither
+fresh,Jaime Gilinski Bacal,A,B,p2014-02ddb5ff1015-A,p2014-02ddb5ff1015-B,engaged,engaged,neither
+fresh,Jiang Bin,A,B,p2014-0155b6b9ba5f-A,p2014-0155b6b9ba5f-B,political_refusal,political_refusal,both
+fresh,Larry Robbins,A,B,p2014-042f1f39fc2d-A,p2014-042f1f39fc2d-B,political_refusal,engaged,when_only
+fresh,Lawrence Ho,A,B,p2014-0430bb6b9b99-A,p2014-0430bb6b9b99-B,political_refusal,engaged,when_only
+fresh,Liu Qiangdong,A,B,p2014-008c063b3ec6-A,p2014-008c063b3ec6-B,political_refusal,political_refusal,both
+fresh,Mark Cuban,A,B,p2014-02bab186b727-A,p2014-02bab186b727-B,engaged,engaged,neither
+fresh,Mark Dixon,A,B,p2014-008909d975d1-A,p2014-008909d975d1-B,political_refusal,engaged,when_only
+fresh,Martha Ingram,A,B,p2014-02fc7a57a898-A,p2014-02fc7a57a898-B,political_refusal,engaged,when_only
+fresh,Nirav Modi,A,B,p2014-01cf5eb50667-A,p2014-01cf5eb50667-B,engaged,other_refusal,neither
+fresh,Renate Reimann-Haas,A,B,p2014-03a2b1cea285-A,p2014-03a2b1cea285-B,political_refusal,engaged,when_only
+fresh,Richard Kinder,A,B,p2014-04b9065205aa-A,p2014-04b9065205aa-B,political_refusal,engaged,when_only
+fresh,Roberto Angelini Rossi,A,B,p2014-013ab57dff06-A,p2014-013ab57dff06-B,engaged,engaged,neither
+fresh,Rubens Menin Teixeira de Souza,A,B,p2014-00afe12407c3-A,p2014-00afe12407c3-B,political_refusal,engaged,when_only
+fresh,Shiv Nadar,A,B,p2014-030eaf3a21fd-A,p2014-030eaf3a21fd-B,engaged,engaged,neither
+fresh,Sidney Kimmel,A,B,p2014-0341650a5657-A,p2014-0341650a5657-B,political_refusal,other_refusal,when_only
+fresh,Sun Weijie,A,B,p2014-0204853d1068-A,p2014-0204853d1068-B,engaged,engaged,neither
+fresh,Akio Nitori,C,D,p2014-03b015b76341-C,p2014-03b015b76341-D,political_refusal,engaged,when_only
+fresh,Alain Bouchard,C,D,p2014-03b3a75c18df-C,p2014-03b3a75c18df-D,political_refusal,engaged,when_only
+fresh,Ana Maria Marcondes Penido Sant'Anna,C,D,p2014-0139829beb7d-C,p2014-0139829beb7d-D,engaged,engaged,neither
+fresh,Antonia Johnson,C,D,p2014-01d6f184299e-C,p2014-01d6f184299e-D,political_refusal,engaged,when_only
+fresh,B.R. Shetty,C,D,p2014-013a1cb139d7-C,p2014-013a1cb139d7-D,engaged,engaged,neither
+fresh,Chen Miaolin,C,D,p2014-01c8de99a331-C,p2014-01c8de99a331-D,political_refusal,political_refusal,both
+fresh,Christopher Cline,C,D,p2014-0378f7237940-C,p2014-0378f7237940-D,engaged,engaged,neither
+fresh,David Geffen,C,D,p2014-023c5724bd42-C,p2014-023c5724bd42-D,engaged,engaged,neither
+fresh,Dmitry Troitsky,C,D,p2014-03314c7fe9ad-C,p2014-03314c7fe9ad-D,engaged,engaged,neither
+fresh,Dulce Pugliese de Godoy Bueno,C,D,p2014-0154701085a6-C,p2014-0154701085a6-D,engaged,engaged,neither
+fresh,Fayez Sarofim,C,D,p2014-0013caeb0c83-C,p2014-0013caeb0c83-D,engaged,engaged,neither
+fresh,Glenn Dubin,C,D,p2014-01e4a69f49c8-C,p2014-01e4a69f49c8-D,engaged,engaged,neither
+fresh,Hajime Satomi,C,D,p2014-04c212ee7b8e-C,p2014-04c212ee7b8e-D,political_refusal,engaged,when_only
+fresh,Jack Dorsey,C,D,p2014-0307a2a76b62-C,p2014-0307a2a76b62-D,engaged,mixed,neither
+fresh,Jaime Gilinski Bacal,C,D,p2014-02ddb5ff1015-C,p2014-02ddb5ff1015-D,engaged,engaged,neither
+fresh,Jiang Bin,C,D,p2014-0155b6b9ba5f-C,p2014-0155b6b9ba5f-D,political_refusal,political_refusal,both
+fresh,Larry Robbins,C,D,p2014-042f1f39fc2d-C,p2014-042f1f39fc2d-D,engaged,engaged,neither
+fresh,Lawrence Ho,C,D,p2014-0430bb6b9b99-C,p2014-0430bb6b9b99-D,political_refusal,engaged,when_only
+fresh,Liu Qiangdong,C,D,p2014-008c063b3ec6-C,p2014-008c063b3ec6-D,political_refusal,political_refusal,both
+fresh,Mark Cuban,C,D,p2014-02bab186b727-C,p2014-02bab186b727-D,engaged,engaged,neither
+fresh,Mark Dixon,C,D,p2014-008909d975d1-C,p2014-008909d975d1-D,political_refusal,engaged,when_only
+fresh,Martha Ingram,C,D,p2014-02fc7a57a898-C,p2014-02fc7a57a898-D,political_refusal,engaged,when_only
+fresh,Nirav Modi,C,D,p2014-01cf5eb50667-C,p2014-01cf5eb50667-D,engaged,engaged,neither
+fresh,Renate Reimann-Haas,C,D,p2014-03a2b1cea285-C,p2014-03a2b1cea285-D,engaged,engaged,neither
+fresh,Richard Kinder,C,D,p2014-04b9065205aa-C,p2014-04b9065205aa-D,political_refusal,engaged,when_only
+fresh,Roberto Angelini Rossi,C,D,p2014-013ab57dff06-C,p2014-013ab57dff06-D,engaged,engaged,neither
+fresh,Rubens Menin Teixeira de Souza,C,D,p2014-00afe12407c3-C,p2014-00afe12407c3-D,political_refusal,engaged,when_only
+fresh,Shiv Nadar,C,D,p2014-030eaf3a21fd-C,p2014-030eaf3a21fd-D,engaged,engaged,neither
+fresh,Sidney Kimmel,C,D,p2014-0341650a5657-C,p2014-0341650a5657-D,political_refusal,engaged,when_only
+fresh,Sun Weijie,C,D,p2014-0204853d1068-C,p2014-0204853d1068-D,political_refusal,engaged,when_only
+fresh,Akio Nitori,E,F,p2014-03b015b76341-E,p2014-03b015b76341-F,other_refusal,engaged,neither
+fresh,Alain Bouchard,E,F,p2014-03b3a75c18df-E,p2014-03b3a75c18df-F,political_refusal,other_refusal,when_only
+fresh,Ana Maria Marcondes Penido Sant'Anna,E,F,p2014-0139829beb7d-E,p2014-0139829beb7d-F,other_refusal,engaged,neither
+fresh,Antonia Johnson,E,F,p2014-01d6f184299e-E,p2014-01d6f184299e-F,engaged,engaged,neither
+fresh,B.R. Shetty,E,F,p2014-013a1cb139d7-E,p2014-013a1cb139d7-F,other_refusal,other_refusal,neither
+fresh,Chen Miaolin,E,F,p2014-01c8de99a331-E,p2014-01c8de99a331-F,engaged,political_refusal,year_only
+fresh,Christopher Cline,E,F,p2014-0378f7237940-E,p2014-0378f7237940-F,engaged,engaged,neither
+fresh,David Geffen,E,F,p2014-023c5724bd42-E,p2014-023c5724bd42-F,engaged,other_refusal,neither
+fresh,Dmitry Troitsky,E,F,p2014-03314c7fe9ad-E,p2014-03314c7fe9ad-F,political_refusal,political_refusal,both
+fresh,Dulce Pugliese de Godoy Bueno,E,F,p2014-0154701085a6-E,p2014-0154701085a6-F,engaged,other_refusal,neither
+fresh,Fayez Sarofim,E,F,p2014-0013caeb0c83-E,p2014-0013caeb0c83-F,other_refusal,engaged,neither
+fresh,Glenn Dubin,E,F,p2014-01e4a69f49c8-E,p2014-01e4a69f49c8-F,engaged,engaged,neither
+fresh,Hajime Satomi,E,F,p2014-04c212ee7b8e-E,p2014-04c212ee7b8e-F,political_refusal,other_refusal,when_only
+fresh,Jack Dorsey,E,F,p2014-0307a2a76b62-E,p2014-0307a2a76b62-F,political_refusal,other_refusal,when_only
+fresh,Jaime Gilinski Bacal,E,F,p2014-02ddb5ff1015-E,p2014-02ddb5ff1015-F,engaged,engaged,neither
+fresh,Jiang Bin,E,F,p2014-0155b6b9ba5f-E,p2014-0155b6b9ba5f-F,political_refusal,political_refusal,both
+fresh,Larry Robbins,E,F,p2014-042f1f39fc2d-E,p2014-042f1f39fc2d-F,political_refusal,engaged,when_only
+fresh,Lawrence Ho,E,F,p2014-0430bb6b9b99-E,p2014-0430bb6b9b99-F,engaged,engaged,neither
+fresh,Liu Qiangdong,E,F,p2014-008c063b3ec6-E,p2014-008c063b3ec6-F,political_refusal,political_refusal,both
+fresh,Mark Cuban,E,F,p2014-02bab186b727-E,p2014-02bab186b727-F,engaged,engaged,neither
+fresh,Mark Dixon,E,F,p2014-008909d975d1-E,p2014-008909d975d1-F,political_refusal,engaged,when_only
+fresh,Martha Ingram,E,F,p2014-02fc7a57a898-E,p2014-02fc7a57a898-F,engaged,engaged,neither
+fresh,Nirav Modi,E,F,p2014-01cf5eb50667-E,p2014-01cf5eb50667-F,political_refusal,engaged,when_only
+fresh,Renate Reimann-Haas,E,F,p2014-03a2b1cea285-E,p2014-03a2b1cea285-F,other_refusal,other_refusal,neither
+fresh,Richard Kinder,E,F,p2014-04b9065205aa-E,p2014-04b9065205aa-F,political_refusal,other_refusal,when_only
+fresh,Roberto Angelini Rossi,E,F,p2014-013ab57dff06-E,p2014-013ab57dff06-F,engaged,engaged,neither
+fresh,Rubens Menin Teixeira de Souza,E,F,p2014-00afe12407c3-E,p2014-00afe12407c3-F,engaged,engaged,neither
+fresh,Shiv Nadar,E,F,p2014-030eaf3a21fd-E,p2014-030eaf3a21fd-F,political_refusal,other_refusal,when_only
+fresh,Sidney Kimmel,E,F,p2014-0341650a5657-E,p2014-0341650a5657-F,political_refusal,other_refusal,when_only
+fresh,Sun Weijie,E,F,p2014-0204853d1068-E,p2014-0204853d1068-F,engaged,other_refusal,neither

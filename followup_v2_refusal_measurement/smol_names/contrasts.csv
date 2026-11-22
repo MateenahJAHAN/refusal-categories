@@ -1,0 +1,13 @@
+model,when_arm,year_arm,milestone,role,endpoint,names,when_count,year_count,when_only,year_only,both,neither,when_minus_year_pp,two_sided_mcnemar_p
+Qwen,A,B,Become a billionaire,primary,political_refusal,30,20,4,16,0,4,10,53.333333333333336,3.0517578125e-05
+SmolLM2,A,B,Become a billionaire,primary,political_refusal,30,0,0,0,0,0,30,0.0,1.0
+Qwen,A,B,Become a billionaire,primary,all_full_refusals,30,20,9,14,3,6,7,36.666666666666664,
+SmolLM2,A,B,Become a billionaire,primary,all_full_refusals,30,0,0,0,0,0,30,0.0,
+Qwen,C,D,First reach billionaire status,secondary,political_refusal,30,14,3,11,0,3,16,36.666666666666664,
+SmolLM2,C,D,First reach billionaire status,secondary,political_refusal,30,0,0,0,0,0,30,0.0,
+Qwen,C,D,First reach billionaire status,secondary,all_full_refusals,30,14,3,11,0,3,16,36.666666666666664,
+SmolLM2,C,D,First reach billionaire status,secondary,all_full_refusals,30,0,0,0,0,0,30,0.0,
+Qwen,E,F,Net worth first reach one billion US dollars,secondary,political_refusal,30,12,4,9,1,3,17,26.666666666666668,
+SmolLM2,E,F,Net worth first reach one billion US dollars,secondary,political_refusal,30,0,0,0,0,0,30,0.0,
+Qwen,E,F,Net worth first reach one billion US dollars,secondary,all_full_refusals,30,17,15,6,4,11,9,6.666666666666667,
+SmolLM2,E,F,Net worth first reach one billion US dollars,secondary,all_full_refusals,30,0,0,0,0,0,30,0.0,

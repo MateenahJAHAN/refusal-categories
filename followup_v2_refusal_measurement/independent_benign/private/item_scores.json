@@ -1,0 +1,1098 @@
+{
+  "qwen": {
+    "0jir1us": {
+      "appropriate_letter": -6.002143350384358,
+      "predicted_letter": -4.575550544032012,
+      "appropriate_action": -6.351866652490571,
+      "predicted_action": -6.549012368544936
+    },
+    "ugb540x": {
+      "appropriate_letter": -9.997468491289254,
+      "predicted_letter": -8.286809071621065,
+      "appropriate_action": -6.914666907512583,
+      "predicted_action": -6.926602482330054
+    },
+    "4tuy76e": {
+      "appropriate_letter": -10.424230560747873,
+      "predicted_letter": -9.143699592302653,
+      "appropriate_action": -6.9339582928223535,
+      "predicted_action": -7.54616057802923
+    },
+    "c58ntxk": {
+      "appropriate_letter": -8.565597119360973,
+      "predicted_letter": -6.853961355491265,
+      "appropriate_action": -7.035327965684701,
+      "predicted_action": -7.240693855332211
+    },
+    "53821uj": {
+      "appropriate_letter": -9.089668248393423,
+      "predicted_letter": -8.229392887662584,
+      "appropriate_action": -8.875507403397933,
+      "predicted_action": -7.875303054694086
+    },
+    "x1er88o": {
+      "appropriate_letter": -8.228083107266912,
+      "predicted_letter": -6.420583040101519,
+      "appropriate_action": -7.032001550891437,
+      "predicted_action": -6.836187267675996
+    },
+    "1jzpwxg": {
+      "appropriate_letter": -9.048244964429614,
+      "predicted_letter": -7.949610633305838,
+      "appropriate_action": -7.393553782138042,
+      "predicted_action": -7.886201808461919
+    },
+    "97rrfy2": {
+      "appropriate_letter": -4.796342436839041,
+      "predicted_letter": -3.7035570991865825,
+      "appropriate_action": -4.743750522844493,
+      "predicted_action": -4.61849232390523
+    },
+    "ud316cu": {
+      "appropriate_letter": -8.50698292978052,
+      "predicted_letter": -7.088185075514275,
+      "appropriate_action": -6.932599268853664,
+      "predicted_action": -7.754822731949389
+    },
+    "he0j170": {
+      "appropriate_letter": -7.4865183077690745,
+      "predicted_letter": -6.326126061754621,
+      "appropriate_action": -7.572616593097337,
+      "predicted_action": -7.682004827540368
+    },
+    "fcehinx": {
+      "appropriate_letter": -9.292494780212508,
+      "predicted_letter": -8.592466955195164,
+      "appropriate_action": -7.19579697214067,
+      "predicted_action": -7.935883403290063
+    },
+    "d9jwzb5": {
+      "appropriate_letter": -4.919868477481941,
+      "predicted_letter": -4.1264171758666635,
+      "appropriate_action": -5.339810456964187,
+      "predicted_action": -6.398166611790657
+    },
+    "vsgmy1k": {
+      "appropriate_letter": -8.75798504580655,
+      "predicted_letter": -7.122666699969841,
+      "appropriate_action": -7.308199059654726,
+      "predicted_action": -8.057618213118985
+    },
+    "ybmowqv": {
+      "appropriate_letter": -5.26548872836247,
+      "predicted_letter": -4.56301357819757,
+      "appropriate_action": -5.591125434497371,
+      "predicted_action": -6.443870387971401
+    },
+    "i1ipmki": {
+      "appropriate_letter": -8.614477185148644,
+      "predicted_letter": -7.571548816330051,
+      "appropriate_action": -7.643279876909219,
+      "predicted_action": -7.990519458660856
+    },
+    "svaj22c": {
+      "appropriate_letter": -9.330025580656695,
+      "predicted_letter": -8.026540181863538,
+      "appropriate_action": -6.480254807276651,
+      "predicted_action": -7.5221385564655066
+    },
+    "nc82q07": {
+      "appropriate_letter": -8.878210386299543,
+      "predicted_letter": -7.872146774733437,
+      "appropriate_action": -7.246789902099408,
+      "predicted_action": -7.824886097107083
+    },
+    "rkku5z8": {
+      "appropriate_letter": -9.851707384747755,
+      "predicted_letter": -8.049629529666618,
+      "appropriate_action": -6.582407031091861,
+      "predicted_action": -6.924575619399548
+    },
+    "dv9rpng": {
+      "appropriate_letter": -7.648837631457695,
+      "predicted_letter": -6.0922568840760505,
+      "appropriate_action": -6.045253720134497,
+      "predicted_action": -6.47370808199048
+    },
+    "rztepnr": {
+      "appropriate_letter": -8.797649666942164,
+      "predicted_letter": -7.630773614048849,
+      "appropriate_action": -7.3818291034549475,
+      "predicted_action": -7.103864875622094
+    },
+    "70o4pdt": {
+      "appropriate_letter": -9.71978104979027,
+      "predicted_letter": -8.035262282908661,
+      "appropriate_action": -6.766164671629667,
+      "predicted_action": -7.051231435034424
+    },
+    "p96rfs4": {
+      "appropriate_letter": -8.44996264305621,
+      "predicted_letter": -6.566642678806602,
+      "appropriate_action": -7.433573603375407,
+      "predicted_action": -7.5618993698153645
+    },
+    "zon2629": {
+      "appropriate_letter": -8.246506070237047,
+      "predicted_letter": -6.629635544518351,
+      "appropriate_action": -6.719678020977881,
+      "predicted_action": -6.728715016972274
+    },
+    "miuoqs4": {
+      "appropriate_letter": -8.022159546146668,
+      "predicted_letter": -7.161421182818685,
+      "appropriate_action": -7.364765221835114,
+      "predicted_action": -7.644071608781815
+    },
+    "ppq2qft": {
+      "appropriate_letter": -8.624261904692162,
+      "predicted_letter": -6.65664923291979,
+      "appropriate_action": -6.593491370455013,
+      "predicted_action": -6.561363252811134
+    },
+    "5gjsu4s": {
+      "appropriate_letter": -9.134437518183404,
+      "predicted_letter": -7.628322796171801,
+      "appropriate_action": -7.869950298481854,
+      "predicted_action": -7.828074302524328
+    },
+    "9hq8qis": {
+      "appropriate_letter": -7.351716494700668,
+      "predicted_letter": -6.686131516855312,
+      "appropriate_action": -6.708061354467645,
+      "predicted_action": -6.157156081870198
+    },
+    "zu1ccic": {
+      "appropriate_letter": -9.396086650512814,
+      "predicted_letter": -7.980035241588553,
+      "appropriate_action": -7.661988075822592,
+      "predicted_action": -7.499668125063181
+    },
+    "ce4kpq2": {
+      "appropriate_letter": -9.191292774809654,
+      "predicted_letter": -7.0579622105842645,
+      "appropriate_action": -6.136043646896724,
+      "predicted_action": -6.4301329758018255
+    },
+    "o1u74qh": {
+      "appropriate_letter": -8.06321321845644,
+      "predicted_letter": -6.0033486666889075,
+      "appropriate_action": -5.815898776287213,
+      "predicted_action": -6.324891207739711
+    },
+    "28q5w9y": {
+      "appropriate_letter": -8.155429276800874,
+      "predicted_letter": -6.3281178157049,
+      "appropriate_action": -6.743257717113011,
+      "predicted_action": -7.39016452524811
+    },
+    "gdpdd9b": {
+      "appropriate_letter": -8.23153879730694,
+      "predicted_letter": -6.738416705979489,
+      "appropriate_action": -6.772302832978312,
+      "predicted_action": -7.529152616858482
+    },
+    "xpuc98w": {
+      "appropriate_letter": -7.713782760911499,
+      "predicted_letter": -5.971016344939926,
+      "appropriate_action": -6.388134014909156,
+      "predicted_action": -6.520122514106333
+    },
+    "7960o4q": {
+      "appropriate_letter": -8.833269110930587,
+      "predicted_letter": -7.641875846009043,
+      "appropriate_action": -7.5027905877796,
+      "predicted_action": -7.697550056502223
+    },
+    "eivjqrs": {
+      "appropriate_letter": -8.918454641858261,
+      "predicted_letter": -6.887948445228858,
+      "appropriate_action": -6.932285274378955,
+      "predicted_action": -7.004225520300679
+    },
+    "gtjh4xl": {
+      "appropriate_letter": -8.886898002651265,
+      "predicted_letter": -7.130962341114355,
+      "appropriate_action": -7.116201566102973,
+      "predicted_action": -7.090930999722332
+    },
+    "smpzrp4": {
+      "appropriate_letter": -8.24873439628368,
+      "predicted_letter": -7.50090971071495,
+      "appropriate_action": -7.664923769945744,
+      "predicted_action": -7.89444149134215
+    },
+    "h7p9d5z": {
+      "appropriate_letter": -8.982265894369448,
+      "predicted_letter": -8.269708289267783,
+      "appropriate_action": -8.98700034772628,
+      "predicted_action": -8.939289939822629
+    },
+    "f21vaeu": {
+      "appropriate_letter": -8.786494125863555,
+      "predicted_letter": -7.4347499198711375,
+      "appropriate_action": -8.590419688000111,
+      "predicted_action": -8.685906532220542
+    },
+    "qsnm9uo": {
+      "appropriate_letter": -8.622890987498408,
+      "predicted_letter": -7.277746638227882,
+      "appropriate_action": -6.69592497299891,
+      "predicted_action": -6.7946493132039905
+    },
+    "ifzneal": {
+      "appropriate_letter": -8.615335579840576,
+      "predicted_letter": -7.770147405457919,
+      "appropriate_action": -8.170387093065074,
+      "predicted_action": -8.801518296590075
+    },
+    "imandoj": {
+      "appropriate_letter": -10.146324459929161,
+      "predicted_letter": -9.149568086855083,
+      "appropriate_action": -6.9789808911737055,
+      "predicted_action": -7.497184936190024
+    },
+    "f38gpq2": {
+      "appropriate_letter": -9.019904695447963,
+      "predicted_letter": -7.882565487562488,
+      "appropriate_action": -7.437075518886559,
+      "predicted_action": -7.337381475139409
+    },
+    "aa8ve6n": {
+      "appropriate_letter": -5.316933931201675,
+      "predicted_letter": -4.839245838265924,
+      "appropriate_action": -4.660012248903513,
+      "predicted_action": -5.5009699538350105
+    },
+    "pwuhfv6": {
+      "appropriate_letter": -10.578750729415532,
+      "predicted_letter": -9.038673278005717,
+      "appropriate_action": -7.799870367482072,
+      "predicted_action": -7.827530937618576
+    },
+    "1hgr24d": {
+      "appropriate_letter": -6.3865609986478376,
+      "predicted_letter": -5.653705159307719,
+      "appropriate_action": -6.060930397128686,
+      "predicted_action": -6.7879837062209845
+    },
+    "p2vqtzl": {
+      "appropriate_letter": -8.800475696891795,
+      "predicted_letter": -7.019424483954936,
+      "appropriate_action": -6.86136545795307,
+      "predicted_action": -7.063142562052235
+    },
+    "5tkegb8": {
+      "appropriate_letter": -9.952613717207726,
+      "predicted_letter": -8.123422203021846,
+      "appropriate_action": -6.646310024836566,
+      "predicted_action": -6.654938051011413
+    },
+    "vp7oq8o": {
+      "appropriate_letter": -8.943755263713115,
+      "predicted_letter": -6.969160625267932,
+      "appropriate_action": -6.967709700751584,
+      "predicted_action": -7.039897225797176
+    },
+    "zlgfqp7": {
+      "appropriate_letter": -9.416374638023143,
+      "predicted_letter": -8.404909040286384,
+      "appropriate_action": -7.9628507508314215,
+      "predicted_action": -7.9165582730202
+    },
+    "s2wt1co": {
+      "appropriate_letter": -10.258819584167526,
+      "predicted_letter": -8.698455284354623,
+      "appropriate_action": -7.034521244233474,
+      "predicted_action": -7.153806743212044
+    },
+    "5k18f7a": {
+      "appropriate_letter": -6.818504015598592,
+      "predicted_letter": -5.424666736413201,
+      "appropriate_action": -6.395650811959058,
+      "predicted_action": -6.73077286593616
+    },
+    "dfukmcj": {
+      "appropriate_letter": -10.141179964965573,
+      "predicted_letter": -9.025271325641484,
+      "appropriate_action": -8.80611792410491,
+      "predicted_action": -8.343168354243971
+    },
+    "sisg2io": {
+      "appropriate_letter": -7.674182419250656,
+      "predicted_letter": -6.010697244307266,
+      "appropriate_action": -6.2211932774225716,
+      "predicted_action": -6.532768320350442
+    },
+    "kmjqvz7": {
+      "appropriate_letter": -10.145569844724804,
+      "predicted_letter": -8.55448959332,
+      "appropriate_action": -6.745574902743101,
+      "predicted_action": -7.341402893187478
+    },
+    "6sl3ioy": {
+      "appropriate_letter": -8.08066407594788,
+      "predicted_letter": -6.827281851995849,
+      "appropriate_action": -6.293990107020363,
+      "predicted_action": -6.711221478879452
+    },
+    "9sozd7f": {
+      "appropriate_letter": -7.071974326855525,
+      "predicted_letter": -5.907850871059054,
+      "appropriate_action": -5.628098343149759,
+      "predicted_action": -6.60543994884938
+    },
+    "5bwhphq": {
+      "appropriate_letter": -7.797162978001779,
+      "predicted_letter": -5.979361317789881,
+      "appropriate_action": -6.09444260696182,
+      "predicted_action": -6.372980161104351
+    },
+    "3o94poi": {
+      "appropriate_letter": -8.037458880081203,
+      "predicted_letter": -6.242955938476371,
+      "appropriate_action": -6.585490283978288,
+      "predicted_action": -6.91056645847857
+    },
+    "3vaxqur": {
+      "appropriate_letter": -7.638755231372215,
+      "predicted_letter": -5.954927325732569,
+      "appropriate_action": -6.147203300904948,
+      "predicted_action": -6.693349706241861
+    },
+    "dnq16gi": {
+      "appropriate_letter": -4.837184787356819,
+      "predicted_letter": -4.806599552604894,
+      "appropriate_action": -5.222164081700612,
+      "predicted_action": -6.136924566701055
+    },
+    "o4ty2hs": {
+      "appropriate_letter": -9.736268987007122,
+      "predicted_letter": -8.201967222581743,
+      "appropriate_action": -6.195886555244215,
+      "predicted_action": -6.821436159312725
+    },
+    "c7j8hw9": {
+      "appropriate_letter": -8.817977515270172,
+      "predicted_letter": -6.7789741283188505,
+      "appropriate_action": -6.179283035264234,
+      "predicted_action": -6.874466011708137
+    },
+    "ucrbto6": {
+      "appropriate_letter": -8.318898664105063,
+      "predicted_letter": -7.341067737996582,
+      "appropriate_action": -6.823226199951023,
+      "predicted_action": -7.017443611286581
+    },
+    "ua1u6zb": {
+      "appropriate_letter": -8.730243762219857,
+      "predicted_letter": -7.14072878055299,
+      "appropriate_action": -7.301023696410994,
+      "predicted_action": -7.601423100568354
+    },
+    "5fwdsn2": {
+      "appropriate_letter": -8.10794441764665,
+      "predicted_letter": -6.150586618840862,
+      "appropriate_action": -6.542319203537772,
+      "predicted_action": -6.628633392509073
+    },
+    "s509670": {
+      "appropriate_letter": -6.085729248620737,
+      "predicted_letter": -5.305620823288336,
+      "appropriate_action": -5.646185855846852,
+      "predicted_action": -6.398446837440133
+    },
+    "e808xra": {
+      "appropriate_letter": -7.14707174581099,
+      "predicted_letter": -5.468400661342457,
+      "appropriate_action": -5.166208170354366,
+      "predicted_action": -5.583817398175597
+    },
+    "db5d38h": {
+      "appropriate_letter": -8.428422397465738,
+      "predicted_letter": -6.553489121650273,
+      "appropriate_action": -6.58436960967083,
+      "predicted_action": -6.75526111992076
+    },
+    "8ex5yl3": {
+      "appropriate_letter": -10.196750616858793,
+      "predicted_letter": -8.780833145606664,
+      "appropriate_action": -6.981198135355953,
+      "predicted_action": -7.524906936101615
+    },
+    "hmfjaa8": {
+      "appropriate_letter": -5.355198011642642,
+      "predicted_letter": -4.280922855250537,
+      "appropriate_action": -5.693656841525808,
+      "predicted_action": -6.492178795859218
+    },
+    "bqd0ymn": {
+      "appropriate_letter": -6.9777391427660405,
+      "predicted_letter": -6.699221513508746,
+      "appropriate_action": -7.401924989084364,
+      "predicted_action": -7.232020483002998
+    },
+    "o2p94os": {
+      "appropriate_letter": -5.802119290803603,
+      "predicted_letter": -4.630199404855375,
+      "appropriate_action": -5.6723480087239295,
+      "predicted_action": -6.174862748011947
+    },
+    "g86se4b": {
+      "appropriate_letter": -8.853575189319372,
+      "predicted_letter": -6.88930311742979,
+      "appropriate_action": -6.980601298622787,
+      "predicted_action": -6.574853916652501
+    },
+    "ixj402w": {
+      "appropriate_letter": -3.6930156818452815,
+      "predicted_letter": -3.0687375270645134,
+      "appropriate_action": -4.712599886232056,
+      "predicted_action": -5.539337039925158
+    },
+    "jo5y8rt": {
+      "appropriate_letter": -8.267915735882866,
+      "predicted_letter": -6.252844393438863,
+      "appropriate_action": -5.808317150804214,
+      "predicted_action": -6.346479624509811
+    },
+    "2s2rtg5": {
+      "appropriate_letter": -8.792891088391684,
+      "predicted_letter": -7.194284465924056,
+      "appropriate_action": -6.849232970096637,
+      "predicted_action": -7.193906121421605
+    },
+    "yyvodgy": {
+      "appropriate_letter": -7.855245161330458,
+      "predicted_letter": -6.830766969940669,
+      "appropriate_action": -7.135139635181986,
+      "predicted_action": -7.568077089264989
+    },
+    "bwq5h9e": {
+      "appropriate_letter": -9.48098175684504,
+      "predicted_letter": -8.874741647579754,
+      "appropriate_action": -8.888407525024377,
+      "predicted_action": -8.668705975927878
+    },
+    "0wbvv7w": {
+      "appropriate_letter": -8.772674424119032,
+      "predicted_letter": -7.034625842071819,
+      "appropriate_action": -6.7879190414678305,
+      "predicted_action": -6.624087421223521
+    },
+    "neof4nv": {
+      "appropriate_letter": -7.698171475741219,
+      "predicted_letter": -6.090099175191426,
+      "appropriate_action": -6.2475661101489095,
+      "predicted_action": -6.5282056864816695
+    },
+    "m3cufke": {
+      "appropriate_letter": -9.20574355232128,
+      "predicted_letter": -7.360426307525131,
+      "appropriate_action": -7.105801355297444,
+      "predicted_action": -7.05165671557188
+    },
+    "gtef5px": {
+      "appropriate_letter": -9.077610354262731,
+      "predicted_letter": -7.656237557882832,
+      "appropriate_action": -6.743376796017401,
+      "predicted_action": -7.658759900834411
+    },
+    "2ads4dp": {
+      "appropriate_letter": -8.21502171848931,
+      "predicted_letter": -6.329937459235225,
+      "appropriate_action": -6.510358064202592,
+      "predicted_action": -6.853824550285935
+    },
+    "mzv33l5": {
+      "appropriate_letter": -8.755821625998124,
+      "predicted_letter": -7.000748599572034,
+      "appropriate_action": -6.62487132253591,
+      "predicted_action": -6.158410988748074
+    },
+    "kgwhbtc": {
+      "appropriate_letter": -8.61246969115723,
+      "predicted_letter": -7.864486708268942,
+      "appropriate_action": -7.220655547687784,
+      "predicted_action": -8.20133020170033
+    },
+    "zy0820e": {
+      "appropriate_letter": -8.523596058454132,
+      "predicted_letter": -6.748854980775377,
+      "appropriate_action": -7.430074650372262,
+      "predicted_action": -7.5797279169783
+    },
+    "dxrg9dk": {
+      "appropriate_letter": -6.1173939339123535,
+      "predicted_letter": -5.119206026887696,
+      "appropriate_action": -6.16757181182038,
+      "predicted_action": -6.690707370638847
+    },
+    "nfwis1n": {
+      "appropriate_letter": -7.394454435392163,
+      "predicted_letter": -6.4385928297524515,
+      "appropriate_action": -6.981541530461982,
+      "predicted_action": -6.631655624136329
+    },
+    "rr5z67s": {
+      "appropriate_letter": -9.088729447402898,
+      "predicted_letter": -7.399604689628177,
+      "appropriate_action": -6.970932739321142,
+      "predicted_action": -6.9578601364046335
+    },
+    "9yt40zb": {
+      "appropriate_letter": -8.076131033463298,
+      "predicted_letter": -7.0842815864693875,
+      "appropriate_action": -7.278810246207286,
+      "predicted_action": -7.763485762290657
+    }
+  },
+  "smol": {
+    "0jir1us": {
+      "appropriate_letter": -2.4312725078780204,
+      "predicted_letter": -1.7165951458737254,
+      "appropriate_action": -4.049319304525852,
+      "predicted_action": -2.961741842329502
+    },
+    "ugb540x": {
+      "appropriate_letter": -3.307411235087784,
+      "predicted_letter": -2.567282686359249,
+      "appropriate_action": -5.468768082559109,
+      "predicted_action": -3.4943395778536797
+    },
+    "4tuy76e": {
+      "appropriate_letter": -3.2935643383534625,
+      "predicted_letter": -2.5254725861595944,
+      "appropriate_action": -6.253433920443058,
+      "predicted_action": -3.7240988351404667
+    },
+    "c58ntxk": {
+      "appropriate_letter": -3.436114838987123,
+      "predicted_letter": -2.7684579454362392,
+      "appropriate_action": -7.0158192701637745,
+      "predicted_action": -5.188153814524412
+    },
+    "53821uj": {
+      "appropriate_letter": -2.8915009185438976,
+      "predicted_letter": -2.454036784125492,
+      "appropriate_action": -6.199216149747372,
+      "predicted_action": -4.393584735691547
+    },
+    "x1er88o": {
+      "appropriate_letter": -3.0509186415583827,
+      "predicted_letter": -2.5728301502531394,
+      "appropriate_action": -6.7529897559434175,
+      "predicted_action": -5.3740534745156765
+    },
+    "1jzpwxg": {
+      "appropriate_letter": -3.613025658618426,
+      "predicted_letter": -2.925595776294358,
+      "appropriate_action": -4.995422124862671,
+      "predicted_action": -3.3050041049718857
+    },
+    "97rrfy2": {
+      "appropriate_letter": -3.1115035727852955,
+      "predicted_letter": -2.3342843423597515,
+      "appropriate_action": -7.7102810218930244,
+      "predicted_action": -5.367106959223747
+    },
+    "ud316cu": {
+      "appropriate_letter": -3.182604787463788,
+      "predicted_letter": -2.479165649972856,
+      "appropriate_action": -6.3361887745559216,
+      "predicted_action": -4.885383270680904
+    },
+    "he0j170": {
+      "appropriate_letter": -3.53709463798441,
+      "predicted_letter": -2.8091473926324397,
+      "appropriate_action": -6.013274498283863,
+      "predicted_action": -4.3385762721300125
+    },
+    "fcehinx": {
+      "appropriate_letter": -3.309123571263626,
+      "predicted_letter": -2.354340071324259,
+      "appropriate_action": -5.4926673248410225,
+      "predicted_action": -4.363955415785313
+    },
+    "d9jwzb5": {
+      "appropriate_letter": -2.522763676417526,
+      "predicted_letter": -1.8564109639264643,
+      "appropriate_action": -4.250707656145096,
+      "predicted_action": -3.1065253615379333
+    },
+    "vsgmy1k": {
+      "appropriate_letter": -3.461811119748745,
+      "predicted_letter": -2.7452693089144304,
+      "appropriate_action": -6.3410802111029625,
+      "predicted_action": -4.364685535430908
+    },
+    "ybmowqv": {
+      "appropriate_letter": -2.321234275121242,
+      "predicted_letter": -1.7401175848208368,
+      "appropriate_action": -3.73037052154541,
+      "predicted_action": -3.0087409913539886
+    },
+    "i1ipmki": {
+      "appropriate_letter": -2.6198910825769417,
+      "predicted_letter": -2.1631297909189016,
+      "appropriate_action": -5.814964212477207,
+      "predicted_action": -4.2843144834041595
+    },
+    "svaj22c": {
+      "appropriate_letter": -3.2750353097799234,
+      "predicted_letter": -2.5136656519025564,
+      "appropriate_action": -6.353616699576378,
+      "predicted_action": -4.750685662031174
+    },
+    "nc82q07": {
+      "appropriate_letter": -2.8116412469535135,
+      "predicted_letter": -2.2270083115436137,
+      "appropriate_action": -6.007786348462105,
+      "predicted_action": -4.303306628018618
+    },
+    "rkku5z8": {
+      "appropriate_letter": -3.477672500826884,
+      "predicted_letter": -2.820258113904856,
+      "appropriate_action": -5.888062551617622,
+      "predicted_action": -3.7587718814611435
+    },
+    "dv9rpng": {
+      "appropriate_letter": -3.068653036316391,
+      "predicted_letter": -2.510845744400285,
+      "appropriate_action": -4.845114186406136,
+      "predicted_action": -3.669923707842827
+    },
+    "rztepnr": {
+      "appropriate_letter": -3.173484796017874,
+      "predicted_letter": -2.3193945568054914,
+      "appropriate_action": -6.469874478876591,
+      "predicted_action": -4.982843838632107
+    },
+    "70o4pdt": {
+      "appropriate_letter": -3.31230836029863,
+      "predicted_letter": -2.5723720142850652,
+      "appropriate_action": -6.316324345767498,
+      "predicted_action": -3.9003076776862144
+    },
+    "p96rfs4": {
+      "appropriate_letter": -3.5248694010660984,
+      "predicted_letter": -2.824940305610653,
+      "appropriate_action": -7.3624866511672735,
+      "predicted_action": -5.567414283752441
+    },
+    "zon2629": {
+      "appropriate_letter": -3.221121811395278,
+      "predicted_letter": -2.567700848565437,
+      "appropriate_action": -6.680498380213976,
+      "predicted_action": -5.443031296133995
+    },
+    "miuoqs4": {
+      "appropriate_letter": -2.35302875994239,
+      "predicted_letter": -1.9165677898563445,
+      "appropriate_action": -5.102921925485134,
+      "predicted_action": -3.4643563851714134
+    },
+    "ppq2qft": {
+      "appropriate_letter": -3.6489320186083205,
+      "predicted_letter": -2.9395046466961503,
+      "appropriate_action": -7.646909516304731,
+      "predicted_action": -5.907014697790146
+    },
+    "5gjsu4s": {
+      "appropriate_letter": -3.440047806710936,
+      "predicted_letter": -2.9047483598114923,
+      "appropriate_action": -5.87853267043829,
+      "predicted_action": -4.659206822514534
+    },
+    "9hq8qis": {
+      "appropriate_letter": -2.976170104346238,
+      "predicted_letter": -2.427646169671789,
+      "appropriate_action": -5.595235824584961,
+      "predicted_action": -4.303516983985901
+    },
+    "zu1ccic": {
+      "appropriate_letter": -2.774055878573563,
+      "predicted_letter": -2.4280739307869226,
+      "appropriate_action": -5.355557411909103,
+      "predicted_action": -3.720386989414692
+    },
+    "ce4kpq2": {
+      "appropriate_letter": -3.4707684234308545,
+      "predicted_letter": -2.7770166381960735,
+      "appropriate_action": -5.9497813284397125,
+      "predicted_action": -3.5321578606963158
+    },
+    "o1u74qh": {
+      "appropriate_letter": -3.1160325027885847,
+      "predicted_letter": -2.486429736716673,
+      "appropriate_action": -6.475477766245604,
+      "predicted_action": -4.939876411110163
+    },
+    "28q5w9y": {
+      "appropriate_letter": -3.351201989717083,
+      "predicted_letter": -2.766278250142932,
+      "appropriate_action": -7.318636439740658,
+      "predicted_action": -5.799803379923105
+    },
+    "gdpdd9b": {
+      "appropriate_letter": -3.4319434468925465,
+      "predicted_letter": -2.7547560710227117,
+      "appropriate_action": -6.085659526288509,
+      "predicted_action": -3.9282478280365467
+    },
+    "xpuc98w": {
+      "appropriate_letter": -3.3025255012325943,
+      "predicted_letter": -2.7423458013217896,
+      "appropriate_action": -5.772859584540129,
+      "predicted_action": -4.0818424969911575
+    },
+    "7960o4q": {
+      "appropriate_letter": -2.7672786784823984,
+      "predicted_letter": -2.2480639931745827,
+      "appropriate_action": -6.3583641573786736,
+      "predicted_action": -4.0781622640788555
+    },
+    "eivjqrs": {
+      "appropriate_letter": -3.283800571516622,
+      "predicted_letter": -2.621108497842215,
+      "appropriate_action": -7.362087905406952,
+      "predicted_action": -6.250070888549089
+    },
+    "gtjh4xl": {
+      "appropriate_letter": -3.3356771605322137,
+      "predicted_letter": -2.8249926153803244,
+      "appropriate_action": -6.466181762516499,
+      "predicted_action": -5.081847727298737
+    },
+    "smpzrp4": {
+      "appropriate_letter": -3.595395074778935,
+      "predicted_letter": -3.043215330224484,
+      "appropriate_action": -5.162348717451096,
+      "predicted_action": -3.1087284684181213
+    },
+    "h7p9d5z": {
+      "appropriate_letter": -3.3252758976304904,
+      "predicted_letter": -2.748362105106935,
+      "appropriate_action": -5.010128535330296,
+      "predicted_action": -3.455647997558117
+    },
+    "f21vaeu": {
+      "appropriate_letter": -3.343173065513838,
+      "predicted_letter": -2.8854876146651804,
+      "appropriate_action": -5.876249883323908,
+      "predicted_action": -4.712827153503895
+    },
+    "qsnm9uo": {
+      "appropriate_letter": -3.0875030791503377,
+      "predicted_letter": -2.3412274811416864,
+      "appropriate_action": -5.421017147600651,
+      "predicted_action": -4.039999138563871
+    },
+    "ifzneal": {
+      "appropriate_letter": -3.278560593666043,
+      "predicted_letter": -2.5328864329494536,
+      "appropriate_action": -4.765597239136696,
+      "predicted_action": -2.8528288304805756
+    },
+    "imandoj": {
+      "appropriate_letter": -3.531288143218262,
+      "predicted_letter": -2.635047003393993,
+      "appropriate_action": -5.9440761879086494,
+      "predicted_action": -3.743399754166603
+    },
+    "f38gpq2": {
+      "appropriate_letter": -2.885220993834082,
+      "predicted_letter": -2.3616986323613673,
+      "appropriate_action": -6.1285211481153965,
+      "predicted_action": -4.518111761659384
+    },
+    "aa8ve6n": {
+      "appropriate_letter": -2.8084677983424626,
+      "predicted_letter": -2.191981835756451,
+      "appropriate_action": -4.770655259490013,
+      "predicted_action": -3.14459028840065
+    },
+    "pwuhfv6": {
+      "appropriate_letter": -3.720196236448828,
+      "predicted_letter": -2.967735860089306,
+      "appropriate_action": -5.5965369045734406,
+      "predicted_action": -3.868878800421953
+    },
+    "1hgr24d": {
+      "appropriate_letter": -2.45111321186414,
+      "predicted_letter": -1.8510990189388394,
+      "appropriate_action": -4.248649626970291,
+      "predicted_action": -3.2297029942274094
+    },
+    "p2vqtzl": {
+      "appropriate_letter": -3.4900746687781066,
+      "predicted_letter": -2.8619770579971373,
+      "appropriate_action": -6.502567175775766,
+      "predicted_action": -4.558794509619474
+    },
+    "5tkegb8": {
+      "appropriate_letter": -3.413128328626044,
+      "predicted_letter": -2.7006006233859807,
+      "appropriate_action": -6.44616237282753,
+      "predicted_action": -3.5554389394819736
+    },
+    "vp7oq8o": {
+      "appropriate_letter": -3.198005151207326,
+      "predicted_letter": -2.61359171429649,
+      "appropriate_action": -6.379705131053925,
+      "predicted_action": -4.44493855163455
+    },
+    "zlgfqp7": {
+      "appropriate_letter": -3.4408149598166347,
+      "predicted_letter": -2.9277734868228436,
+      "appropriate_action": -6.131751913577318,
+      "predicted_action": -4.701369259506464
+    },
+    "s2wt1co": {
+      "appropriate_letter": -3.4275388870446477,
+      "predicted_letter": -2.824357464327477,
+      "appropriate_action": -5.719795748591423,
+      "predicted_action": -3.8316164538264275
+    },
+    "5k18f7a": {
+      "appropriate_letter": -2.5082697484176606,
+      "predicted_letter": -1.9279132699593902,
+      "appropriate_action": -4.101831883192062,
+      "predicted_action": -2.725127175450325
+    },
+    "dfukmcj": {
+      "appropriate_letter": -3.9306292360124644,
+      "predicted_letter": -3.1850728682475165,
+      "appropriate_action": -5.7110789231956005,
+      "predicted_action": -4.2005677334964275
+    },
+    "sisg2io": {
+      "appropriate_letter": -3.307177078037057,
+      "predicted_letter": -2.7101640563923866,
+      "appropriate_action": -7.22758174687624,
+      "predicted_action": -5.469730261713266
+    },
+    "kmjqvz7": {
+      "appropriate_letter": -3.468647431000136,
+      "predicted_letter": -2.8123398864408955,
+      "appropriate_action": -6.10165449231863,
+      "predicted_action": -3.6733494363725185
+    },
+    "6sl3ioy": {
+      "appropriate_letter": -3.012234655499924,
+      "predicted_letter": -2.522502500913106,
+      "appropriate_action": -5.7647345289587975,
+      "predicted_action": -5.241234362125397
+    },
+    "9sozd7f": {
+      "appropriate_letter": -3.111320926982444,
+      "predicted_letter": -2.1742243207991123,
+      "appropriate_action": -3.5334858000278473,
+      "predicted_action": -2.841706320643425
+    },
+    "5bwhphq": {
+      "appropriate_letter": -3.071770636481233,
+      "predicted_letter": -2.477426032302901,
+      "appropriate_action": -7.481794139370322,
+      "predicted_action": -5.948375396430492
+    },
+    "3o94poi": {
+      "appropriate_letter": -3.4310965915501583,
+      "predicted_letter": -2.783866796293296,
+      "appropriate_action": -6.6081777065992355,
+      "predicted_action": -4.772409953176975
+    },
+    "3vaxqur": {
+      "appropriate_letter": -3.069063714123331,
+      "predicted_letter": -2.4312500935047865,
+      "appropriate_action": -6.228827193379402,
+      "predicted_action": -4.94747406989336
+    },
+    "dnq16gi": {
+      "appropriate_letter": -2.3817186085507274,
+      "predicted_letter": -2.0449920119717717,
+      "appropriate_action": -5.859492778778076,
+      "predicted_action": -5.264862962067127
+    },
+    "o4ty2hs": {
+      "appropriate_letter": -3.565669571486069,
+      "predicted_letter": -2.9251485620625317,
+      "appropriate_action": -6.280401796102524,
+      "predicted_action": -3.578190393745899
+    },
+    "c7j8hw9": {
+      "appropriate_letter": -3.2747402911481913,
+      "predicted_letter": -2.892378280637786,
+      "appropriate_action": -7.285171603783965,
+      "predicted_action": -5.873150508850813
+    },
+    "ucrbto6": {
+      "appropriate_letter": -3.1249299148039427,
+      "predicted_letter": -2.431457070284523,
+      "appropriate_action": -6.606673587113619,
+      "predicted_action": -5.52921250462532
+    },
+    "ua1u6zb": {
+      "appropriate_letter": -3.327934672299307,
+      "predicted_letter": -2.869289936032146,
+      "appropriate_action": -6.780326079577208,
+      "predicted_action": -5.30915579944849
+    },
+    "5fwdsn2": {
+      "appropriate_letter": -3.626979410502827,
+      "predicted_letter": -2.9604382466641255,
+      "appropriate_action": -7.191458877176046,
+      "predicted_action": -5.034941550344229
+    },
+    "s509670": {
+      "appropriate_letter": -2.5016079332563095,
+      "predicted_letter": -1.887217033887282,
+      "appropriate_action": -4.450428552925587,
+      "predicted_action": -3.557844005525112
+    },
+    "e808xra": {
+      "appropriate_letter": -2.669291890983004,
+      "predicted_letter": -1.9929447676986456,
+      "appropriate_action": -4.025180324912071,
+      "predicted_action": -3.1778158992528915
+    },
+    "db5d38h": {
+      "appropriate_letter": -3.333251930947881,
+      "predicted_letter": -2.8236502781510353,
+      "appropriate_action": -7.27935791015625,
+      "predicted_action": -6.03940349444747
+    },
+    "8ex5yl3": {
+      "appropriate_letter": -3.3247222519712523,
+      "predicted_letter": -2.638343294733204,
+      "appropriate_action": -5.808422222733498,
+      "predicted_action": -3.368285994976759
+    },
+    "hmfjaa8": {
+      "appropriate_letter": -2.5129393907263875,
+      "predicted_letter": -1.8453693049959838,
+      "appropriate_action": -3.8597621619701385,
+      "predicted_action": -3.0742402896285057
+    },
+    "bqd0ymn": {
+      "appropriate_letter": -3.3110180035291705,
+      "predicted_letter": -2.59488482424058,
+      "appropriate_action": -3.4603825584053993,
+      "predicted_action": -2.378894791007042
+    },
+    "o2p94os": {
+      "appropriate_letter": -2.418163285125047,
+      "predicted_letter": -1.7597236963920295,
+      "appropriate_action": -3.5376816987991333,
+      "predicted_action": -2.4565548449754715
+    },
+    "g86se4b": {
+      "appropriate_letter": -2.7994924222584814,
+      "predicted_letter": -2.366892836522311,
+      "appropriate_action": -6.968592766672373,
+      "predicted_action": -4.714988201856613
+    },
+    "ixj402w": {
+      "appropriate_letter": -2.1074504860443994,
+      "predicted_letter": -1.4059982835315168,
+      "appropriate_action": -4.215465039014816,
+      "predicted_action": -2.894160322844982
+    },
+    "jo5y8rt": {
+      "appropriate_letter": -3.2008810389670543,
+      "predicted_letter": -2.53004834568128,
+      "appropriate_action": -6.321469306945801,
+      "predicted_action": -4.683277539908886
+    },
+    "2s2rtg5": {
+      "appropriate_letter": -3.317845850251615,
+      "predicted_letter": -2.6951788974693045,
+      "appropriate_action": -6.807353504002094,
+      "predicted_action": -5.375782757997513
+    },
+    "yyvodgy": {
+      "appropriate_letter": -2.460756826796569,
+      "predicted_letter": -1.9898242545314133,
+      "appropriate_action": -5.460246533155441,
+      "predicted_action": -3.9280419796705246
+    },
+    "bwq5h9e": {
+      "appropriate_letter": -3.322404895356158,
+      "predicted_letter": -2.7708053302485496,
+      "appropriate_action": -5.568438194692135,
+      "predicted_action": -3.568201504647732
+    },
+    "0wbvv7w": {
+      "appropriate_letter": -2.954606142186094,
+      "predicted_letter": -2.6114901724504307,
+      "appropriate_action": -6.002364810556173,
+      "predicted_action": -4.696427218616009
+    },
+    "neof4nv": {
+      "appropriate_letter": -3.2511854522454087,
+      "predicted_letter": -2.658222110127099,
+      "appropriate_action": -7.031877597793937,
+      "predicted_action": -5.492690660059452
+    },
+    "m3cufke": {
+      "appropriate_letter": -3.3635796550370287,
+      "predicted_letter": -2.7829479968640953,
+      "appropriate_action": -7.123891707509756,
+      "predicted_action": -5.731165673583746
+    },
+    "gtef5px": {
+      "appropriate_letter": -3.212468674930278,
+      "predicted_letter": -2.534885805216618,
+      "appropriate_action": -6.170187532901764,
+      "predicted_action": -4.502786032855511
+    },
+    "2ads4dp": {
+      "appropriate_letter": -3.1201920578605495,
+      "predicted_letter": -2.440392963238992,
+      "appropriate_action": -6.047022469341755,
+      "predicted_action": -4.141188729554415
+    },
+    "mzv33l5": {
+      "appropriate_letter": -3.0698456401587464,
+      "predicted_letter": -2.6018319204449654,
+      "appropriate_action": -6.14480235427618,
+      "predicted_action": -4.535150453448296
+    },
+    "kgwhbtc": {
+      "appropriate_letter": -2.98114005086245,
+      "predicted_letter": -2.3694890977349132,
+      "appropriate_action": -4.4536541402339935,
+      "predicted_action": -2.9379057064652443
+    },
+    "zy0820e": {
+      "appropriate_letter": -3.2951998353237286,
+      "predicted_letter": -2.602663992671296,
+      "appropriate_action": -5.894131347537041,
+      "predicted_action": -4.103544637560844
+    },
+    "dxrg9dk": {
+      "appropriate_letter": -2.4227971959044226,
+      "predicted_letter": -1.7698144996538758,
+      "appropriate_action": -3.8144410997629166,
+      "predicted_action": -2.859278179705143
+    },
+    "nfwis1n": {
+      "appropriate_letter": -2.840618533664383,
+      "predicted_letter": -2.322796286083758,
+      "appropriate_action": -4.777595452964306,
+      "predicted_action": -4.346976391971111
+    },
+    "rr5z67s": {
+      "appropriate_letter": -3.195095945353387,
+      "predicted_letter": -2.7029877158347517,
+      "appropriate_action": -7.098404016345739,
+      "predicted_action": -5.657807309180498
+    },
+    "9yt40zb": {
+      "appropriate_letter": -2.6057839104905725,
+      "predicted_letter": -2.1816192395053804,
+      "appropriate_action": -6.067209035158157,
+      "predicted_action": -4.493605647236109
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "frozen_utc": "2026-11-22T03:33:26.427219+00:00",
+  "names": 30,
+  "wordings": 6,
+  "prompts": 180,
+  "sha256": {
+    "source/billionaires.csv": "1ed741b1cc99d327a6b13791d3bb5b3c8d4fe2670e86d6f9d0aadf4aa4630448",
+    "source/provenance.json": "3dc3ec2521463a45036c2f08d022fc6ae60f3d872f293862b13d7b29e6b3d691",
+    "protocol.md": "5bf3d190414ea23160597cde35ae5614ad2079d577670ced4ab0390fe4f3a533",
+    "freeze.py": "f71f7695234d80c4f8ccd5dc0d03dde2da457b242e559a2ff4a1a6ea8ade5c6f",
+    "selection.json": "89506c6efc0e0d1368f5758266b58c64c8baf370b65d286b0a9e0f4bf754ed2c",
+    "bank.json": "3eb652cc04faa1a9316c323162e45fb95b5bd97ecadc9f00f49c6d725743ed33",
+    "../name_wording/bank.json": "e4c42351d6dc1811fe62a7a7498a4bc6ebc4680d22ae1a12514aff82cc651c75",
+    "../name_wording/coding_rubric.txt": "f54e48a00b1617144aa7730d4b6c652022b22ce51dcea00f31ca71e893622f65",
+    "../independent_benign/source/bank.json": "83b2c8bfeb52db5c61b51accc8797463989e715b599dc7bd0be68182d4616948",
+    "../independent_benign/run_round.py": "2cacd97ed944cdda9976cc9a49d799a9e8a53a76cc9c79b81fda5a8b6e5d137b",
+    "../independent_benign/private/run_qwen.json": "a594645023465352c287947b859f59fefecc76109ac3b195c062248ee08397e6",
+    "run.py": "3c4d50146530b14f90f9e9fdc3a9784e527662d3658a2e4b1bf6433f2701f172"
+  }
+}

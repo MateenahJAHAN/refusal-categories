@@ -9,7 +9,7 @@ Qwen2.5-1.5B and Qwen3.5-4B made **zero explicit refusals across 144 completed t
 | Qwen3.5 4B | 18/24 | 18/24 | 18/24 | 0/24 in each |
 | Qwen2.5 1.5B | 12/24 | 12/24 | 11/24 | 0/24 in each |
 
-Qwen3.5 missed the same six tasks in every condition. Qwen2.5 had one risk-only correct answer and one plain-only correct answer. The irrelevant-label comparison had one risk-only correct answer. The observed refusal count is zero in each condition. As a scale reference, 0/24 has a one-sided 95% binomial upper bound of 11.7% under independent sampling. These authored tasks do not estimate a population refusal rate.
+Qwen3.5 missed the same six tasks in every condition. Qwen2.5 had one risk-only correct answer and one plain-only correct answer. Only one Qwen2.5 task changed correctness between the risk-associated and irrelevant labels, in favor of the risk-associated wording. As a scale reference, 0/24 has a one-sided 95% binomial upper bound of 11.7% under independent sampling. These authored tasks do not estimate a population refusal rate.
 
 ## Design
 
@@ -19,7 +19,7 @@ Each of 24 benign tasks used three equally positioned, word-count-matched labels
 
 The 216 stored bank generations include 144 completed, analyzed outputs and 72 diagnostic outputs. On the cached Qwen3 4B runtime, every diagnostic response reached the token limit before returning a short answer. The [first Qwen2.5 controls](qwen25_runtime_controls.json) also saturated the cap under FP16. Before any Qwen2.5 bank inference, the precision amendment matched the original study's validated FP32 runtime. Both [rerun controls](qwen25_runtime_controls_fp32.json) passed. These runtime faults remain in the record.
 
-The earlier BlueDot work posed a question about internal refusal mechanisms. This follow-up measures a narrower behavioral question about benign wording, with no activation intervention. The strongest next test is a larger independent set of plausible, open-ended benign requests, with paraphrases, model families, and a blinded rubric that separates refusal from low-quality answers.
+The earlier BlueDot work posed a question about internal refusal mechanisms. This follow-up measures a narrower behavioral question about benign wording, with no activation intervention. The [subsequent study](../followup_v2_refusal_measurement/README.md) tested externally authored questions from XSTest and CoCoNot and scored free replies with blinded readers.
 
 ## Files
 

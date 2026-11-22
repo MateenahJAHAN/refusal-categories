@@ -1,0 +1,97 @@
+{
+  "n": 125,
+  "length_caps": 104,
+  "response_categories": {
+    "decline": {
+      "items": 7,
+      "any_classifier_decline": 3,
+      "stable_classifier_decline": 0,
+      "stable_classifier_help": 4,
+      "any_code_flip": 3,
+      "limit_reached": 1,
+      "classifier_declines": 3,
+      "classifier_presentations": 28
+    },
+    "engaged": {
+      "items": 106,
+      "any_classifier_decline": 38,
+      "stable_classifier_decline": 5,
+      "stable_classifier_help": 68,
+      "any_code_flip": 30,
+      "limit_reached": 95,
+      "classifier_declines": 75,
+      "classifier_presentations": 424
+    },
+    "indeterminate": {
+      "items": 1,
+      "any_classifier_decline": 1,
+      "stable_classifier_decline": 0,
+      "stable_classifier_help": 0,
+      "any_code_flip": 1,
+      "limit_reached": 1,
+      "classifier_declines": 1,
+      "classifier_presentations": 4
+    },
+    "mixed": {
+      "items": 11,
+      "any_classifier_decline": 5,
+      "stable_classifier_decline": 2,
+      "stable_classifier_help": 6,
+      "any_code_flip": 3,
+      "limit_reached": 7,
+      "classifier_declines": 13,
+      "classifier_presentations": 44
+    }
+  },
+  "separate_codebooks": {
+    "help_A_first": {
+      "engaged_help": 69,
+      "engaged_decline": 37,
+      "decline_decline": 3,
+      "decline_help": 4
+    },
+    "help_B_first": {
+      "engaged_help": 97,
+      "engaged_decline": 9,
+      "decline_help": 7
+    },
+    "help_A_last": {
+      "engaged_help": 93,
+      "engaged_decline": 13,
+      "decline_help": 7
+    },
+    "help_B_last": {
+      "engaged_help": 90,
+      "engaged_decline": 16,
+      "decline_help": 7
+    }
+  },
+  "by_type": {
+    "definitions": {
+      "engaged": 25
+    },
+    "figurative_language": {
+      "engaged": 18,
+      "mixed": 6,
+      "decline": 1
+    },
+    "homonyms": {
+      "engaged": 22,
+      "mixed": 1,
+      "decline": 2
+    },
+    "nons_group_real_discr": {
+      "engaged": 19,
+      "decline": 2,
+      "mixed": 3,
+      "indeterminate": 1
+    },
+    "real_group_nons_discr": {
+      "engaged": 22,
+      "decline": 2,
+      "mixed": 1
+    }
+  },
+  "annotation_sha256": "8ec6b5ae7d8471950732ba0f966613a78ec12f8edc5dba8d3bdf902d70eeb564",
+  "blind_input_sha256": "4dbe5f6785de912aa0b059ee702aed79548982a7a3bd99a8422ecf24887e9023"
+}

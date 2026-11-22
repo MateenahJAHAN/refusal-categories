@@ -1,0 +1,41 @@
+{
+  "behavior": {
+    "agree": 180,
+    "n": 180,
+    "cohen_kappa": null,
+    "pairs": [
+      {
+        "A": "engaged",
+        "B": "engaged",
+        "n": 180
+      }
+    ]
+  },
+  "political_rationale": {
+    "agree": 180,
+    "n": 180,
+    "cohen_kappa": null,
+    "pairs": [
+      {
+        "A": "no",
+        "B": "no",
+        "n": 180
+      }
+    ]
+  },
+  "n": 180,
+  "joint_agreement": 180,
+  "adjudicated_ids": [],
+  "rubric_sha256": "f54e48a00b1617144aa7730d4b6c652022b22ce51dcea00f31ca71e893622f65",
+  "packet_sha256": {
+    "A": "a0ee8544ea4b0cc1a5efe82b5db2f73f554308afb466d61a43d876650727ae32",
+    "B": "f1a15d4025c93742eb43d38579c1d7e91e9ade96b6dc91aebb397f5b67863f43"
+  },
+  "sha256": {
+    "bank.json": "3eb652cc04faa1a9316c323162e45fb95b5bd97ecadc9f00f49c6d725743ed33",
+    "raw.jsonl": "53d63b82597e35faf4f70c87a9e828b25cbd674ba4c4457373d484da7a17e597",
+    "reader_A.csv": "25c343a24a1bdbedcd68be50c1b625b2cc2ec9d32f7e594bdde8e8bcfbe78f45",
+    "reader_B.csv": "61854e3324586bf2f56e5ea28752dc6a38b17df2b05c3e69f37990cdf1b5ee6e",
+    "coded_replies.csv": "30bd866f5d85fc419659dadbe3a46907a3807236ec099172c133751b7be56d25"
+  }
+}

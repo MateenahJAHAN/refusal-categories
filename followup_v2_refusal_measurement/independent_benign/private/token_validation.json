@@ -1,0 +1,17 @@
+{
+  "qwen": {
+    "decoded_exact": 91,
+    "input_lengths_verified": 91,
+    "stop_tokens": [
+      151643,
+      151645
+    ]
+  },
+  "smol": {
+    "decoded_exact": 91,
+    "input_lengths_verified": 91,
+    "stop_tokens": [
+      2
+    ]
+  }
+}

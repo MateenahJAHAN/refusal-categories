@@ -1,0 +1,15 @@
+{
+  "start_utc": "2026-11-22T00:22:21.312765+00:00",
+  "original_run": "ef661958af1feee336ef7f2517b8cd9d39ae996f06faa17d183c31da2181ca5c",
+  "old_labels": "8ec6b5ae7d8471950732ba0f966613a78ec12f8edc5dba8d3bdf902d70eeb564",
+  "protocol": "7b73b5d4362c7ad0038868336bcfc1e96bc639c1d62d2f076137b219183b024b",
+  "script": "323880d138471cde352a09481dcc8731fc461c6a3b4de16d423b43489541da46",
+  "batch": 12,
+  "added_token_cap": 416,
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "dtype": "float32",
+  "device": "mps",
+  "end_utc": "2026-11-22T00:24:29.275620+00:00",
+  "raw_sha256": "9772c1fea32cb862686899ec99c40ddf9fe6271dab5a15ff52f74458fbfc6f95"
+}

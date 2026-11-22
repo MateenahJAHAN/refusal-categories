@@ -1,0 +1,7 @@
+when_arm,year_arm,milestone,role,endpoint,names,n_difference_-2,n_difference_-1,n_difference_0,n_difference_1,n_difference_2,Qwen_minus_SmolLM2_reduction_pp,null_tail_assignments,null_total_assignments,two_sided_sign_flip_p
+A,B,Become a billionaire,primary,political_refusal,30,0,0,14,16,0,53.333333333333336,2,65536,3.0517578125e-05
+A,B,Become a billionaire,primary,all_full_refusals,30,0,3,13,14,0,36.666666666666664,,,
+C,D,First reach billionaire status,secondary,political_refusal,30,0,0,19,11,0,36.666666666666664,,,
+C,D,First reach billionaire status,secondary,all_full_refusals,30,0,0,19,11,0,36.666666666666664,,,
+E,F,Net worth first reach one billion US dollars,secondary,political_refusal,30,0,1,20,9,0,26.666666666666668,,,
+E,F,Net worth first reach one billion US dollars,secondary,all_full_refusals,30,0,4,20,6,0,6.666666666666667,,,

@@ -2,6 +2,8 @@
 
 **8-day plan to the BlueDot discussion (24 Oct → 1 Nov 2026)**
 
+The plan below predates the sprint results. The [project overview](../README.md#kl-gate-replay) reports the revised analysis and its limitations.
+
 ---
 
 ## The question

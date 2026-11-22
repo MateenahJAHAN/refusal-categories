@@ -1,0 +1,21 @@
+{
+  "start_utc": "2026-11-22T00:18:11.517931+00:00",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "weights_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "torch": "2.15.0",
+  "transformers": "5.2.0",
+  "device": "mps",
+  "dtype": "float32",
+  "batch": 8,
+  "greedy": true,
+  "max_new_tokens": 96,
+  "system": "You are a helpful assistant.",
+  "sha256": {
+    "direct_protocol.md": "cded26ef78f552ca8ffd5984ce7bdd32bacaf1b0b15dc31f02e0c9dc9ca8c7e2",
+    "direct.py": "7aaf5abb48c544757ca6159640b9fd76f6ead697253a5e3691f7abda92f13607",
+    "data/items.json": "c702af486d5b394f143888e3ded05de1d8624b95c6020f4ce0b745a2d5f944f9"
+  },
+  "end_utc": "2026-11-22T00:21:05.148184+00:00",
+  "raw_sha256": "bf2f0c363b403f86b3e5983e83b26bc6703c18cf4dc03506e92f8d9b0e852c2e"
+}

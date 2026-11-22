@@ -1,0 +1,33 @@
+{
+  "start_utc": "2026-11-22T03:04:45.052645+00:00",
+  "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "revision": "31b70e2e869a7173562077fd711b654946d38674",
+  "checkpoint_sha256": {
+    "config.json": "994f50b16abb4ae00880baefe03c10260b5bd608d2bf586f7056ca05a534feea",
+    "model.safetensors": "f55217be716b6a997b97b9d8d7eb6fad02e00858f5010ec24f64603c3a98a0e8",
+    "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+    "tokenizer_config.json": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df"
+  },
+  "device": "mps",
+  "dtype": "float32",
+  "attention": "sdpa",
+  "torch": "2.15.0",
+  "transformers": "5.2.0",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "batch_direct": 8,
+  "batch_measure": 16,
+  "source_sha256": {
+    "protocol.md": "9592b19cea880b066bf926ad3ba957fe9cb596474309d792d5c8f3b92a091873",
+    "prepare_bank.py": "92c6a4c7c0d7e039d1e6097241c90ddfd8192114474c9d052ca670fa787d5443",
+    "run_round.py": "2cacd97ed944cdda9976cc9a49d799a9e8a53a76cc9c79b81fda5a8b6e5d137b",
+    "source/bank.json": "83b2c8bfeb52db5c61b51accc8797463989e715b599dc7bd0be68182d4616948",
+    "source/source.json": "f8d0266ee91b5eeb77c7f7b13ef3ffc205eeb5db2df948451af126bf197ecb6c",
+    "../semantic_check/run_semantic.py": "6d3eb77d2628f4e0be2be2325bb4eabcbcf86d3e84aa50610341aa9f0f25cfe0",
+    "../run.py": "f9b6c4bd240bf0445fd5bd47facba5030e96d05289bb42051bcf34e4ceec18ac"
+  },
+  "end_utc": "2026-11-22T03:11:46.021118+00:00",
+  "output_sha256": {
+    "readout_smol.jsonl": "500c69c906ddd7f0fd351811bfb01d58b8f74a4b33535948605d059e0432360f",
+    "replies_smol.jsonl": "6f798cfd02bd3bef4d5f8cd77ba1ba54848297752a3be4ecbb3254c32f44a45f"
+  }
+}

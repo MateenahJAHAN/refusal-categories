@@ -1,0 +1,124 @@
+{
+  "rows": 80,
+  "unique_names": 10,
+  "unique_wordings": 8,
+  "generated_tokens": 4504,
+  "natural_endings": 80,
+  "continued_after_first_block": 0,
+  "first_block_limit": 256,
+  "maximum_tokens": 219,
+  "decoded_full_replies_matching": 80,
+  "matching_baseline_tokens_including_stop": 10,
+  "baseline_comparisons": [
+    {
+      "id": "0jir1us-A",
+      "source_id": "0jir1us",
+      "name": "Alain Wertheimer",
+      "prior_tokens": 41,
+      "rerun_tokens": 41,
+      "answer_tokens_identical": true,
+      "stop_id_identical": true,
+      "text_identical": true,
+      "first_differing_answer_token_zero_based": null
+    },
+    {
+      "id": "d9jwzb5-A",
+      "source_id": "d9jwzb5",
+      "name": "Cheng Yu-tung",
+      "prior_tokens": 44,
+      "rerun_tokens": 44,
+      "answer_tokens_identical": true,
+      "stop_id_identical": true,
+      "text_identical": true,
+      "first_differing_answer_token_zero_based": null
+    },
+    {
+      "id": "ybmowqv-A",
+      "source_id": "ybmowqv",
+      "name": "Dieter Schwarz",
+      "prior_tokens": 41,
+      "rerun_tokens": 41,
+      "answer_tokens_identical": true,
+      "stop_id_identical": true,
+      "text_identical": true,
+      "first_differing_answer_token_zero_based": null
+    },
+    {
+      "id": "1hgr24d-A",
+      "source_id": "1hgr24d",
+      "name": "Bernard Arnault",
+      "prior_tokens": 41,
+      "rerun_tokens": 41,
+      "answer_tokens_identical": true,
+      "stop_id_identical": true,
+      "text_identical": true,
+      "first_differing_answer_token_zero_based": null
+    },
+    {
+      "id": "5k18f7a-A",
+      "source_id": "5k18f7a",
+      "name": "Dietrich Mateschitz",
+      "prior_tokens": 41,
+      "rerun_tokens": 41,
+      "answer_tokens_identical": true,
+      "stop_id_identical": true,
+      "text_identical": true,
+      "first_differing_answer_token_zero_based": null
+    },
+    {
+      "id": "s509670-A",
+      "source_id": "s509670",
+      "name": "Roman Abramovich",
+      "prior_tokens": 45,
+      "rerun_tokens": 45,
+      "answer_tokens_identical": true,
+      "stop_id_identical": true,
+      "text_identical": true,
+      "first_differing_answer_token_zero_based": null
+    },
+    {
+      "id": "hmfjaa8-A",
+      "source_id": "hmfjaa8",
+      "name": "William Ding",
+      "prior_tokens": 41,
+      "rerun_tokens": 41,
+      "answer_tokens_identical": true,
+      "stop_id_identical": true,
+      "text_identical": true,
+      "first_differing_answer_token_zero_based": null
+    },
+    {
+      "id": "o2p94os-A",
+      "source_id": "o2p94os",
+      "name": "Carlos Alberto Sicupira",
+      "prior_tokens": 41,
+      "rerun_tokens": 41,
+      "answer_tokens_identical": true,
+      "stop_id_identical": true,
+      "text_identical": true,
+      "first_differing_answer_token_zero_based": null
+    },
+    {
+      "id": "ixj402w-A",
+      "source_id": "ixj402w",
+      "name": "Acharya Balkrishna",
+      "prior_tokens": 41,
+      "rerun_tokens": 41,
+      "answer_tokens_identical": true,
+      "stop_id_identical": true,
+      "text_identical": true,
+      "first_differing_answer_token_zero_based": null
+    },
+    {
+      "id": "dxrg9dk-A",
+      "source_id": "dxrg9dk",
+      "name": "Jorge Paulo Lemann",
+      "prior_tokens": 91,
+      "rerun_tokens": 91,
+      "answer_tokens_identical": true,
+      "stop_id_identical": true,
+      "text_identical": true,
+      "first_differing_answer_token_zero_based": null
+    }
+  ]
+}

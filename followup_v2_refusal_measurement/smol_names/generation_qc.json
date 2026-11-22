@@ -1,0 +1,22 @@
+{
+  "rows": 180,
+  "unique_names": 30,
+  "wordings": 6,
+  "qwen_bank_byte_identical": true,
+  "qwen_id_overlap": 180,
+  "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "revision": "31b70e2e869a7173562077fd711b654946d38674",
+  "freeze_utc": "2026-11-22T03:51:31.999807+00:00",
+  "run_start_utc": "2026-11-22T03:52:06.410370+00:00",
+  "run_end_utc": "2026-11-22T03:58:30.891220+00:00",
+  "finish_counts": {
+    "stop": 180
+  },
+  "continued_after_first_block": 0,
+  "first_block_limit": 256,
+  "maximum_allowed_new_tokens": 2048,
+  "generated_tokens": 7073,
+  "maximum_tokens": 167,
+  "decoded_replies_matching": 180,
+  "raw_sha256": "53d63b82597e35faf4f70c87a9e828b25cbd674ba4c4457373d484da7a17e597"
+}

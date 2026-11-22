@@ -1,0 +1,31 @@
+{
+  "start_utc": "2026-11-22T00:17:12.406884+00:00",
+  "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "revision": "31b70e2e869a7173562077fd711b654946d38674",
+  "inputs": {
+    "protocol.md": "0bbd83473491495810024ab06085ec2ddfc27d938876aa044bfbc14597ef58b0",
+    "run.py": "f9b6c4bd240bf0445fd5bd47facba5030e96d05289bb42051bcf34e4ceec18ac",
+    "prepare.py": "657eeda04c2af0ba21531c7875c3e33b5ff9d84daa9f28b53cbada679442c614",
+    "data/items.json": "c702af486d5b394f143888e3ded05de1d8624b95c6020f4ce0b745a2d5f944f9",
+    "data/sources.json": "f8da8397753d10fef018b5415c4442e613c21f8a8a077925e5646d7bef12dcce"
+  },
+  "model_file_sha256": {
+    "config.json": "994f50b16abb4ae00880baefe03c10260b5bd608d2bf586f7056ca05a534feea",
+    "model.safetensors": "f55217be716b6a997b97b9d8d7eb6fad02e00858f5010ec24f64603c3a98a0e8",
+    "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+    "tokenizer_config.json": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df"
+  },
+  "torch": "2.15.0",
+  "transformers": "5.2.0",
+  "system": "macOS-26.5.1-arm64-arm-64bit",
+  "hardware": "arm64",
+  "dtype": "float32",
+  "device": "mps",
+  "batch": 16,
+  "token_ids": {
+    "A": 49,
+    "B": 50
+  },
+  "finish_utc": "2026-11-22T00:19:41.800976+00:00",
+  "raw_sha256": "a1e58a7a58187e6289a3cfdbcec531aaa07959c72ebaa71d7043f75113b741da"
+}

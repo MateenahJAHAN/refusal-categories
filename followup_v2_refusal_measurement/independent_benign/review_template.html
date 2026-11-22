@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Independent reply coding</title>
+<style>body{max-width:52rem;margin:auto;padding:1.5rem;font:17px/1.5 system-ui,sans-serif;color:#1d2630}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;background:#f4f6f8;border-left:.2rem solid #64778d;padding:1rem}button,input,textarea,select{font:inherit}button,select{padding:.3rem .6rem}button{cursor:pointer}label{display:inline-block;margin:0 .7rem .4rem 0}textarea{display:block;width:98%;min-height:4em}fieldset{margin:1rem 0;border:1px solid #a4adb8}nav{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}.code{color:#4e5c6b}h1,h2{line-height:1.25}summary{cursor:pointer}.actions{margin:1rem 0}.restore{display:inline-block}#msg{min-height:1.5rem}</style>
+<h1>Independent reply coding</h1><details><summary>Rubric and instructions</summary><pre>%%RUBRIC%%</pre></details>
+<p id="status" aria-live="polite"></p><nav><button id="prev">Previous</button><select id="jump" aria-label="Jump to item"></select><button id="next">Next</button><button id="empty">Next uncoded</button></nav>
+<p id="code" class="code"></p><h2>Question</h2><p id="question"></p><h2>Reply</h2><pre id="reply"></pre>
+<fieldset id="labels"><legend>Response code</legend></fieldset><label for="notes">Notes (optional)</label><textarea id="notes"></textarea>
+<div class="actions"><button id="save">Export CSV</button> <label class="restore">Restore CSV <input type="file" id="load" accept=".csv,text/csv"></label></div><p id="msg" role="status"></p>
+<script id="records" type="application/json">%%RECORDS%%</script>
+<script>
+'use strict';
+const bank=JSON.parse(document.querySelector('#records').textContent), get=id=>document.getElementById(id), labels=['engaged','decline','mixed','indeterminate'];
+const cacheKey='reply-coding-v1-%%RATER%%-'+bank[0].blind_id;
+let saved={}, pos=0;try{saved=JSON.parse(localStorage.getItem(cacheKey)||'{}')}catch(_){}
+function persist(){try{localStorage.setItem(cacheKey,JSON.stringify(saved))}catch(_){get('msg').textContent='This browser cannot autosave. Export a CSV before closing.'}}
+function record(){return saved[bank[pos].blind_id]??={code:'',notes:''}}
+function progress(){const n=bank.reduce((a,b)=>a+(labels.includes(saved[b.blind_id]?.code)?1:0),0);get('status').textContent=`Item ${pos+1} of ${bank.length} · ${n} coded`}
+function render(){const b=bank[pos],r=record(); get('question').textContent=b.prompt;get('reply').textContent=b.reply;get('code').textContent=b.blind_id;get('jump').value=pos;get('notes').value=r.notes||'';for(const x of get('labels').querySelectorAll('input'))x.checked=x.value===r.code;get('prev').disabled=pos===0;get('next').disabled=pos===bank.length-1;progress()}
+for(const [i,b] of bank.entries()){const opt=document.createElement('option');opt.value=i;opt.textContent=String(i+1);get('jump').append(opt)}
+for(const label of labels){const wrapper=document.createElement('label'),x=document.createElement('input');x.type='radio';x.name='code';x.value=label;x.onchange=()=>{record().code=label;persist();progress()};wrapper.append(x,document.createTextNode(label));get('labels').append(wrapper)}
+get('jump').onchange=e=>{pos=Number(e.target.value);render()};get('prev').onclick=()=>{pos--;render()};get('next').onclick=()=>{pos++;render()};get('empty').onclick=()=>{for(let k=1;k<=bank.length;k++){const i=(pos+k)%bank.length;if(!saved[bank[i].blind_id]?.code){pos=i;render();return}}get('msg').textContent='Every item is coded.'};
+get('notes').oninput=e=>{record().notes=e.target.value;persist()};
+const quote=x=>'"'+String(x).replaceAll('"','""')+'"';
+get('save').onclick=()=>{const a=document.createElement('a'), rows=[['blind_id','code','notes'],...bank.map(b=>[b.blind_id,saved[b.blind_id]?.code||'',saved[b.blind_id]?.notes||''])];const url=URL.createObjectURL(new Blob([rows.map(r=>r.map(quote).join(',')).join('\r\n')+'\r\n'],{type:'text/csv;charset=utf-8'}));a.href=url;a.download='reviewer_%%RATER%%.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+function csv(s){let rows=[],r=[],v='',q=false;for(let i=0;i<s.length;i++){const c=s[i];if(c==='"'){if(q&&s[i+1]==='"'){v+='"';i++}else q=!q}else if(c===','&&!q){r.push(v);v=''}else if(c==='\n'&&!q){r.push(v.replace(/\r$/,''));rows.push(r);r=[];v=''}else v+=c}if(q)throw Error('Unclosed CSV field');if(r.length||v){r.push(v);rows.push(r)}return rows}
+get('load').onchange=async e=>{try{const [h,...rs]=csv((await e.target.files[0].text()).replace(/^\uFEFF/,''));if(h.join(',')!=='blind_id,code,notes'||rs.length!==bank.length)throw Error('Incorrect header or row count');const ids=new Set(bank.map(b=>b.blind_id)),restored={};for(const [id,code,notes,...extra] of rs){if(extra.length||typeof notes!=='string'||restored[id]||!ids.has(id)||(code&&!labels.includes(code)))throw Error('Unrecognized row');restored[id]={code,notes}}saved=restored;persist();render();get('msg').textContent='Review restored.'}catch(err){get('msg').textContent='Import failed: '+err.message}finally{e.target.value=''}};render();
+</script></html>
