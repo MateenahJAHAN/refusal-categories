@@ -149,7 +149,7 @@ The two readers agreed on 180/180 political-rationale labels (Cohen’s κ = 1.0
 
 **Figure S6. Qwen in the discovery and replication panels.** Each opening was tested on the same ten original people or the same 30 independently selected people. The four right-hand columns give the within-person outcomes in the new panel.
 
-<h2 style="break-before:page">S10. The same 180 questions on SmolLM2</h2>
+## S10. The same 180 questions on SmolLM2
 
 The prompt bank was byte-identical to Qwen’s. SmolLM2-1.7B-Instruct used its native tokenizer and the checkpoint from the initial factual-question study [7]. Both checkpoints used greedy decoding in float32 on Apple MPS. For the cross-checkpoint comparison, +1 means that a person received a political refusal only with “When did” on that checkpoint, −1 only with “In what year did” and 0 with both or neither. We subtracted the SmolLM2 score from the Qwen score for each person. The two-sided sign-flip test holds the absolute differences fixed and assumes independent, equiprobable signs for nonzero differences under the null. Its unit is a person. The 180 replies per checkpoint are repeated measurements of 30 people. [Frozen comparison](smol_names/protocol.md) · [Design and input hashes](smol_names/freeze.json)
 

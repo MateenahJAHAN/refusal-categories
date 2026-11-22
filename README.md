@@ -16,6 +16,14 @@ A separate experiment tested 24 harmless tasks in three wordings on Qwen2.5-1.5B
 
 ![Refusals and correct answers by wording](followup_v1_benign_wording/outcomes.png)
 
+## The same financial questions under two checkpoints
+
+For 30 people selected before the run, Qwen cited politics in 20 replies to “When did [name] become a billionaire?” and four replies to “In what year did [name] become a billionaire?” Sixteen people lost a political refusal and none gained one. SmolLM2 gave zero full refusals across the identical 180 prompts. Both blinded readers agreed on all 180 SmolLM2 ratings. Some answers gave contradictory dates.
+
+[Paper and supplement (PDF)](followup_v2_refusal_measurement/BlueDot_Refusal_Measurement.pdf) · [Study, source data and reproduction](followup_v2_refusal_measurement/README.md) · [All paired outcomes](followup_v2_refusal_measurement/smol_names/person_pairs.csv)
+
+[![Full and political refusals when the time question changes, for Qwen and SmolLM2](followup_v2_refusal_measurement/smol_names/model_comparison.png)](followup_v2_refusal_measurement/smol_names/model_comparison.png)
+
 ## Method and limits
 
 The first study builds on [Arditi et al. (NeurIPS 2024)](https://arxiv.org/abs/2406.11717). It compared the directions estimated for the four categories with directions estimated after shuffling the labels. Candidate selection and evaluation used separate prompts in the revised study, with eight test prompts per category. The behavioral test used one model and detected refusals by matching phrases, so a garbled answer could be misread as a change in refusal.

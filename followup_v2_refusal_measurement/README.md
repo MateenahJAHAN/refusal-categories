@@ -29,7 +29,7 @@ python smol_names/score.py merge
 python smol_names/compare_models.py
 ```
 
-The original sprint was Mateenah Jahan’s project. Codex designed and ran these follow-ups. The response ratings came from AI readers. All replies, including declines and uncertain or inconsistent answers, contribute to their stated denominators. The Qwen results were known when the SmolLM2 comparison was specified. [Paper](manuscript.md) · [Supplement](supplement.md) · [Comparison protocol](smol_names/protocol.md)
+The original sprint was Mateenah Jahan’s project. Codex designed and ran these follow-ups. The response ratings came from AI readers. All replies, including declines and uncertain or inconsistent answers, contribute to their stated denominators. The Qwen results were known when the SmolLM2 comparison was specified. [Paper and supplement (PDF)](BlueDot_Refusal_Measurement.pdf) · [Manuscript source](manuscript.md) · [Supplement source](supplement.md) · [Comparison protocol](smol_names/protocol.md)
 
 ## Source credits
 
