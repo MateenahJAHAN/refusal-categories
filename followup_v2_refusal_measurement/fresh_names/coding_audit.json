@@ -1,0 +1,65 @@
+{
+  "behavior": {
+    "agree": 179,
+    "n": 180,
+    "cohen_kappa": 0.9890310786106034,
+    "pairs": [
+      {
+        "A": "decline",
+        "B": "decline",
+        "n": 78
+      },
+      {
+        "A": "engaged",
+        "B": "engaged",
+        "n": 99
+      },
+      {
+        "A": "engaged",
+        "B": "mixed",
+        "n": 1
+      },
+      {
+        "A": "mixed",
+        "B": "mixed",
+        "n": 2
+      }
+    ]
+  },
+  "political_rationale": {
+    "agree": 180,
+    "n": 180,
+    "cohen_kappa": 1.0,
+    "pairs": [
+      {
+        "A": "no",
+        "B": "no",
+        "n": 123
+      },
+      {
+        "A": "yes",
+        "B": "yes",
+        "n": 57
+      }
+    ]
+  },
+  "n": 180,
+  "joint_agreement": 179,
+  "adjudicated_ids": [
+    "p2014-030eaf3a21fd-B"
+  ],
+  "rubric_sha256": "f54e48a00b1617144aa7730d4b6c652022b22ce51dcea00f31ca71e893622f65",
+  "packet_sha256": {
+    "A": "58085e2dabf9120650ec4a1dec983998b58341f1d3fdc5ce2055d4674636a89b",
+    "B": "92c1d9a995456ff2235b1c8cf9204c34b447d5cce19c4f6f3505e72c037f1764",
+    "C": "f693c1d73d36290c6eb33c1882c22ce29e139ae49f57965c929eadd1caafb347"
+  },
+  "sha256": {
+    "bank.json": "3eb652cc04faa1a9316c323162e45fb95b5bd97ecadc9f00f49c6d725743ed33",
+    "raw.jsonl": "e51b5892db033529b9fd3013ed643c431cb7f18831d1e6d2a878dc9070f8b1e1",
+    "reader_A.csv": "b1ff1e643045297f0d5a84669c10910c2556f07485d7638bf6f76629b3d73fa7",
+    "reader_B.csv": "f0b1ae0b9301947465094016b72a5f3d88debcd9407a4995f09fb39682318853",
+    "coded_replies.csv": "a724be2114d7a2ca1330583c50e3300e7556c94e706b55c4d08204fbda4ed15b",
+    "reader_C.csv": "97422f5e5a99ee04b735ba0d9296ecdd4aa8c00cf324a0e047799249b769efd7"
+  }
+}

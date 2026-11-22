@@ -1,0 +1,30 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "inputs": {
+    "PLAN.md": "ef5c1e135d26b4dd4b39a6ceb4a9b77723c28bc2caaaa8506933f0cee3150bec",
+    "run_semantic.py": "6d3eb77d2628f4e0be2be2325bb4eabcbcf86d3e84aa50610341aa9f0f25cfe0",
+    "../data/items.json": "c702af486d5b394f143888e3ded05de1d8624b95c6020f4ce0b745a2d5f944f9",
+    "../data/raw_qwen.jsonl": "fa97cb6f21ff6527a9b282152957cd4691ba06021ab4e611fbc33e1c77d467c0"
+  },
+  "model_file_sha256": {
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+  },
+  "torch": "2.15.0",
+  "transformers": "5.2.0",
+  "token_ids": {
+    "A": 32,
+    "B": 33,
+    "Answer": 16141,
+    "Pass": 12187
+  },
+  "batch": 16,
+  "device": "mps",
+  "dtype": "float32",
+  "start_utc": "2026-11-22T02:29:42.871142+00:00",
+  "finish_utc": "2026-11-22T02:32:48.219303+00:00",
+  "raw_sha256": "ffbfa3dcbf3d0abdad5721812c7e285c792213d57553643c361590b2131d9732"
+}

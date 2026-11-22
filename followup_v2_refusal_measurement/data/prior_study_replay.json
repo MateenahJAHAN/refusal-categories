@@ -1,0 +1,37 @@
+{
+  "public_revision": "42f57fcb3980cbc60f6c7f6944aab94398d743ee",
+  "source_results_reproduced": true,
+  "wording": {
+    "raw_trials": 216,
+    "summary_matches_archived": true,
+    "archived_results_sha256": "416c0c5d7cdbe5d6aaa3ff4c44210a37ab87087b78e2a4d60b3267d85075c5ac"
+  },
+  "kl": {
+    "criterion": "kl < 0.1",
+    "criterion_timing": "retrospective",
+    "per_layer": [
+      {
+        "layer": 16,
+        "kl": 0.38612911105155945,
+        "passes": false
+      },
+      {
+        "layer": 20,
+        "kl": 1.6765162944793701,
+        "passes": false
+      },
+      {
+        "layer": 22,
+        "kl": 0.13235393166542053,
+        "passes": false
+      },
+      {
+        "layer": 23,
+        "kl": 0.14990368485450745,
+        "passes": false
+      }
+    ],
+    "eligible_layers": [],
+    "mechanism": "unresolved"
+  }
+}

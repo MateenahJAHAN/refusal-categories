@@ -1,0 +1,29 @@
+{
+  "start_utc": "2026-11-22T03:52:06.410370+00:00",
+  "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "revision": "31b70e2e869a7173562077fd711b654946d38674",
+  "checkpoint_sha256": {
+    "config.json": "994f50b16abb4ae00880baefe03c10260b5bd608d2bf586f7056ca05a534feea",
+    "model.safetensors": "f55217be716b6a997b97b9d8d7eb6fad02e00858f5010ec24f64603c3a98a0e8",
+    "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+    "tokenizer_config.json": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df"
+  },
+  "torch": "2.15.0",
+  "transformers": "5.2.0",
+  "device": "mps",
+  "dtype": "float32",
+  "attention": "sdpa",
+  "batch_direct": 8,
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "freeze_sha256": "221aef746b271cb3180c3807bffff8a98a398a21411bad65d27ec01264de9085",
+  "runner_sha256": "675bfed9adc95eb23c2e79a38488a335195b4f7a8930a9b6a443c9fa6e7983c2",
+  "generation_config_sha256": "87b916edaaab66b3899b9d0dd0752727dff6666686da0504d89ae0a6e055a013",
+  "vocab_sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79",
+  "merges_sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+  "special_tokens_map_sha256": "2b7379f3ae813529281a5c602bc5a11c1d4e0a99107aaa597fe936c1e813ca52",
+  "python": "3.12.11",
+  "local_files_only": true,
+  "end_utc": "2026-11-22T03:58:30.891220+00:00",
+  "completed": 180,
+  "raw_sha256": "53d63b82597e35faf4f70c87a9e828b25cbd674ba4c4457373d484da7a17e597"
+}

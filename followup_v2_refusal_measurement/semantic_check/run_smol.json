@@ -1,0 +1,30 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "revision": "31b70e2e869a7173562077fd711b654946d38674",
+  "inputs": {
+    "PLAN.md": "ef5c1e135d26b4dd4b39a6ceb4a9b77723c28bc2caaaa8506933f0cee3150bec",
+    "run_semantic.py": "6d3eb77d2628f4e0be2be2325bb4eabcbcf86d3e84aa50610341aa9f0f25cfe0",
+    "../data/items.json": "c702af486d5b394f143888e3ded05de1d8624b95c6020f4ce0b745a2d5f944f9",
+    "../data/raw_smol.jsonl": "a1e58a7a58187e6289a3cfdbcec531aaa07959c72ebaa71d7043f75113b741da"
+  },
+  "model_file_sha256": {
+    "config.json": "994f50b16abb4ae00880baefe03c10260b5bd608d2bf586f7056ca05a534feea",
+    "model.safetensors": "f55217be716b6a997b97b9d8d7eb6fad02e00858f5010ec24f64603c3a98a0e8",
+    "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+    "tokenizer_config.json": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df"
+  },
+  "torch": "2.15.0",
+  "transformers": "5.2.0",
+  "token_ids": {
+    "A": 49,
+    "B": 50,
+    "Answer": 21350,
+    "Pass": 17911
+  },
+  "batch": 16,
+  "device": "mps",
+  "dtype": "float32",
+  "start_utc": "2026-11-22T02:32:56.135277+00:00",
+  "finish_utc": "2026-11-22T02:37:45.569415+00:00",
+  "raw_sha256": "2bcdedb955336ef905c88e56853a2517969b1a4e9382ba4ecdc1fc4084d1724b"
+}

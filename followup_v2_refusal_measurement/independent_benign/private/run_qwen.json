@@ -1,0 +1,33 @@
+{
+  "start_utc": "2026-11-22T02:51:50.371479+00:00",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "checkpoint_sha256": {
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+  },
+  "device": "mps",
+  "dtype": "float32",
+  "attention": "sdpa",
+  "torch": "2.15.0",
+  "transformers": "5.2.0",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "batch_direct": 8,
+  "batch_measure": 16,
+  "source_sha256": {
+    "protocol.md": "9592b19cea880b066bf926ad3ba957fe9cb596474309d792d5c8f3b92a091873",
+    "prepare_bank.py": "92c6a4c7c0d7e039d1e6097241c90ddfd8192114474c9d052ca670fa787d5443",
+    "run_round.py": "2cacd97ed944cdda9976cc9a49d799a9e8a53a76cc9c79b81fda5a8b6e5d137b",
+    "source/bank.json": "83b2c8bfeb52db5c61b51accc8797463989e715b599dc7bd0be68182d4616948",
+    "source/source.json": "f8d0266ee91b5eeb77c7f7b13ef3ffc205eeb5db2df948451af126bf197ecb6c",
+    "../semantic_check/run_semantic.py": "6d3eb77d2628f4e0be2be2325bb4eabcbcf86d3e84aa50610341aa9f0f25cfe0",
+    "../run.py": "f9b6c4bd240bf0445fd5bd47facba5030e96d05289bb42051bcf34e4ceec18ac"
+  },
+  "end_utc": "2026-11-22T03:04:30.006888+00:00",
+  "output_sha256": {
+    "readout_qwen.jsonl": "f0a44bbd8ca60352db3d8e3c909966db50a30fa76aa04c1f558f2d9dd7b1f627",
+    "replies_qwen.jsonl": "10ef484a7c37ef3c2fc8cab49c8cd3d6441e6c16b2a28de13440357a0a37099e"
+  }
+}

@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.log
+/fresh_names/source/billionaires.csv
+/independent_benign/source/test-00000-of-00001.parquet
+/independent_benign/private/blind_key.json
+/independent_benign/private/blind_seed.hex
+
+/independent_benign/source/README.md
+!/data/
+!/data/**
+!/figure1.png
+!/results.json
+!/semantic_check/results.json

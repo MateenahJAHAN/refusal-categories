@@ -1,0 +1,2 @@
+# Preserve the byte hashes of archived research CSVs on every platform.
+*.csv -text whitespace=cr-at-eol

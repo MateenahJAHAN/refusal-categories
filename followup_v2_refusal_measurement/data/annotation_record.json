@@ -1,0 +1,8 @@
+{
+  "locked_utc": "2026-11-22T00:21:40.108623+00:00",
+  "reader": "OpenAI Codex, single AI reader",
+  "scores_seen_before_coding": false,
+  "blinded_to": "benchmark IDs, stored types and classification outcomes",
+  "rubric": "direct_protocol.md",
+  "response_codes_sha256": "8ec6b5ae7d8471950732ba0f966613a78ec12f8edc5dba8d3bdf902d70eeb564"
+}

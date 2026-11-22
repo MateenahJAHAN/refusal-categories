@@ -1,0 +1,11 @@
+{
+  "dataset": "CORGIS Billionaires CSV",
+  "corgis_credit": "Ryan Whitcomb",
+  "snapshot_year": 2014,
+  "source_credit": "Caroline Freund and Sarah Oliver, Peterson Institute for International Economics; historical Forbes World\u2019s Billionaires lists",
+  "documentation": "https://corgis-edu.github.io/corgis/csv/billionaires/",
+  "underlying_study": "https://www.piie.com/sites/default/files/documents/wp16-1.pdf",
+  "commit": "d1f4fefa0691a1dde9f0f3a258a8817b0655e6e7",
+  "download": "https://raw.githubusercontent.com/corgis-edu/corgis/d1f4fefa0691a1dde9f0f3a258a8817b0655e6e7/datasets/csv/billionaires/billionaires.csv",
+  "sha256": "1ed741b1cc99d327a6b13791d3bb5b3c8d4fe2670e86d6f9d0aadf4aa4630448"
+}

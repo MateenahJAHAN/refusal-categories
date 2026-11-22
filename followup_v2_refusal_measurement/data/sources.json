@@ -1,0 +1,10 @@
+{
+  "xstest": {
+    "url": "https://raw.githubusercontent.com/paul-rottger/xstest/d7bb5bd738c1fcbc36edd83d5e7d1b71a3e2d84d/xstest_prompts.csv",
+    "sha256": "11783fb294ed017473ee53c207d71f2161c7672c8d0b037501e78387f801cb5a"
+  },
+  "wording": {
+    "url": "https://raw.githubusercontent.com/MateenahJAHAN/refusal-categories/42f57fcb3980cbc60f6c7f6944aab94398d743ee/followup_v1_benign_wording/raw_qwen25-1.5b.jsonl",
+    "sha256": "52c9edb69ee134f43ed0c45f5f2afb53fa8c18f47e27ffd70926ad066a2a59f0"
+  }
+}

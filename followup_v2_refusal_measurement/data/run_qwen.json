@@ -1,0 +1,31 @@
+{
+  "start_utc": "2026-11-22T00:16:06.039649+00:00",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "inputs": {
+    "protocol.md": "0bbd83473491495810024ab06085ec2ddfc27d938876aa044bfbc14597ef58b0",
+    "run.py": "f9b6c4bd240bf0445fd5bd47facba5030e96d05289bb42051bcf34e4ceec18ac",
+    "prepare.py": "657eeda04c2af0ba21531c7875c3e33b5ff9d84daa9f28b53cbada679442c614",
+    "data/items.json": "c702af486d5b394f143888e3ded05de1d8624b95c6020f4ce0b745a2d5f944f9",
+    "data/sources.json": "f8da8397753d10fef018b5415c4442e613c21f8a8a077925e5646d7bef12dcce"
+  },
+  "model_file_sha256": {
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+  },
+  "torch": "2.15.0",
+  "transformers": "5.2.0",
+  "system": "macOS-26.5.1-arm64-arm-64bit",
+  "hardware": "arm64",
+  "dtype": "float32",
+  "device": "mps",
+  "batch": 16,
+  "token_ids": {
+    "A": 32,
+    "B": 33
+  },
+  "finish_utc": "2026-11-22T00:17:52.311413+00:00",
+  "raw_sha256": "fa97cb6f21ff6527a9b282152957cd4691ba06021ab4e611fbc33e1c77d467c0"
+}

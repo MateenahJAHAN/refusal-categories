@@ -1,0 +1,363 @@
+{
+  "source_rows_2014": 1653,
+  "eligible_people": 1617,
+  "excluded": [
+    {
+      "name": "Bernard Arnault",
+      "reason": "previous person or prompt"
+    },
+    {
+      "name": "Dieter Schwarz",
+      "reason": "previous person or prompt"
+    },
+    {
+      "name": "Jorge Paulo Lemann",
+      "reason": "previous person or prompt"
+    },
+    {
+      "name": "Cheng Yu-tung",
+      "reason": "previous person or prompt"
+    },
+    {
+      "name": "Thomas and Raymond Kwok",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "David & Simon Reuben",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Robert & Philip Ng",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Hinduja Brothers",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Dietrich Mateschitz",
+      "reason": "previous person or prompt"
+    },
+    {
+      "name": "Roman Abramovich",
+      "reason": "previous person or prompt"
+    },
+    {
+      "name": "Alain Wertheimer",
+      "reason": "previous person or prompt"
+    },
+    {
+      "name": "Carlos Alberto Sicupira",
+      "reason": "previous person or prompt"
+    },
+    {
+      "name": "Hank & Doug Meijer",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Augusto & Giorgio Perfetti",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Paolo & Gianfelice Mario Rocca",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Carlos and Alejandro Bulgheroni",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Kwee brothers",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Shashi and Ravi Ruia",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Guenter Herz & Family",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Emanuele (Lino) Saputo",
+      "reason": "multiple display names or alias"
+    },
+    {
+      "name": "William Ding",
+      "reason": "previous person or prompt"
+    },
+    {
+      "name": "David & Frederick Barclay",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Bernard (Barry) Sherman",
+      "reason": "multiple display names or alias"
+    },
+    {
+      "name": "Martin & Olivier Bouygues",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Ian & Richard Livingstone",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Eddie & Sol Zakay",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Jay Robert (J.B.) Pritzker",
+      "reason": "multiple display names or alias"
+    },
+    {
+      "name": "Michael & Rainer Schmidt-Ruthenbeck",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Jean (Gigi) Pritzker",
+      "reason": "multiple display names or alias"
+    },
+    {
+      "name": "Malvinder and Shivinder Singh",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Raj Kumar & Kishin RK",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Jose and Francisco Jose Calderon Rojas",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Matt & Dan Walsh",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Tahir family",
+      "reason": "joint or family label"
+    },
+    {
+      "name": "Billy Joe (Red) McCombs",
+      "reason": "multiple display names or alias"
+    },
+    {
+      "name": "Evgeny (Eugene) Shvidler",
+      "reason": "multiple display names or alias"
+    }
+  ],
+  "n": 30,
+  "members": [
+    {
+      "name": "Fayez Sarofim",
+      "normalized": "fayez sarofim",
+      "selection_hash": "0013caeb0c831abebd15d86d6cc9df039d9d5ef3102c06aac4d82bb72b608164",
+      "source_id": "p2014-0013caeb0c83",
+      "source_rank": 931
+    },
+    {
+      "name": "Mark Dixon",
+      "normalized": "mark dixon",
+      "selection_hash": "008909d975d1446e312cb2d75b4d8b870f2803c583611997d4c1747c743b7bfa",
+      "source_id": "p2014-008909d975d1",
+      "source_rank": 1372
+    },
+    {
+      "name": "Liu Qiangdong",
+      "normalized": "liu qiangdong",
+      "selection_hash": "008c063b3ec61d15fce93b71ac9d8d3bb896464a9d5d1499b92136b98c5b3e3c",
+      "source_id": "p2014-008c063b3ec6",
+      "source_rank": 642
+    },
+    {
+      "name": "Rubens Menin Teixeira de Souza",
+      "normalized": "rubens menin teixeira de souza",
+      "selection_hash": "00afe12407c3bec04329ef862e3e910b98032e9133588c4989464bb85ba0f582",
+      "source_id": "p2014-00afe12407c3",
+      "source_rank": 1372
+    },
+    {
+      "name": "Ana Maria Marcondes Penido Sant'Anna",
+      "normalized": "ana maria marcondes penido sant anna",
+      "selection_hash": "0139829beb7d8c663a7480b5ee09374fecdd3667f5908a72c20f45c2a25fa4a7",
+      "source_id": "p2014-0139829beb7d",
+      "source_rank": 1143
+    },
+    {
+      "name": "B.R. Shetty",
+      "normalized": "b r shetty",
+      "selection_hash": "013a1cb139d73ed566501bb369da253b501e0d09fb2c19d6d8cfa3880db1d295",
+      "source_id": "p2014-013a1cb139d7",
+      "source_rank": 1565
+    },
+    {
+      "name": "Roberto Angelini Rossi",
+      "normalized": "roberto angelini rossi",
+      "selection_hash": "013ab57dff06bf20adba9ced437e19bdc5c138779bf93d2c6dfa49ac7713b6a3",
+      "source_id": "p2014-013ab57dff06",
+      "source_rank": 1092
+    },
+    {
+      "name": "Dulce Pugliese de Godoy Bueno",
+      "normalized": "dulce pugliese de godoy bueno",
+      "selection_hash": "0154701085a6713f20b0e5647043713326417aeca23310a7102d0f258b1cf6aa",
+      "source_id": "p2014-0154701085a6",
+      "source_rank": 931
+    },
+    {
+      "name": "Jiang Bin",
+      "normalized": "jiang bin",
+      "selection_hash": "0155b6b9ba5f1874944e43ffcd562a723aaf5224d0b62a87f8a82301ca98d13a",
+      "source_id": "p2014-0155b6b9ba5f",
+      "source_rank": 408
+    },
+    {
+      "name": "Chen Miaolin",
+      "normalized": "chen miaolin",
+      "selection_hash": "01c8de99a331da63ae2fce3a0459badfbb7d637325f6789699c542260c226603",
+      "source_id": "p2014-01c8de99a331",
+      "source_rank": 1540
+    },
+    {
+      "name": "Nirav Modi",
+      "normalized": "nirav modi",
+      "selection_hash": "01cf5eb50667135d2c9817a79b982a8b826726cc872bfa9fc72acfa68bf66f3a",
+      "source_id": "p2014-01cf5eb50667",
+      "source_rank": 1372
+    },
+    {
+      "name": "Antonia Johnson",
+      "normalized": "antonia johnson",
+      "selection_hash": "01d6f184299ee1aa26aee90ae03b4fbbd22eae827a128c6454f459858c6d0a9e",
+      "source_id": "p2014-01d6f184299e",
+      "source_rank": 153
+    },
+    {
+      "name": "Glenn Dubin",
+      "normalized": "glenn dubin",
+      "selection_hash": "01e4a69f49c8812d06e3db570df9a1e4f0845df57c4baae2291a93a16002345e",
+      "source_id": "p2014-01e4a69f49c8",
+      "source_rank": 988
+    },
+    {
+      "name": "Sun Weijie",
+      "normalized": "sun weijie",
+      "selection_hash": "0204853d1068cf16ac12359f9031cd64f72f617e102cd258da5a146170ad57da",
+      "source_id": "p2014-0204853d1068",
+      "source_rank": 869
+    },
+    {
+      "name": "David Geffen",
+      "normalized": "david geffen",
+      "selection_hash": "023c5724bd42a4a9d4a31afc50d5cf0b5fe7433993eefcac9b481611eebd3ba5",
+      "source_id": "p2014-023c5724bd42",
+      "source_rank": 227
+    },
+    {
+      "name": "Mark Cuban",
+      "normalized": "mark cuban",
+      "selection_hash": "02bab186b727e5321918e61e198bb05c29ad468335c74eeec50e4794adb89650",
+      "source_id": "p2014-02bab186b727",
+      "source_rank": 663
+    },
+    {
+      "name": "Jaime Gilinski Bacal",
+      "normalized": "jaime gilinski bacal",
+      "selection_hash": "02ddb5ff1015b86cac78a3832cac6ba2950aec07ad83883ef30de2c321f5c574",
+      "source_id": "p2014-02ddb5ff1015",
+      "source_rank": 580
+    },
+    {
+      "name": "Martha Ingram",
+      "normalized": "martha ingram",
+      "selection_hash": "02fc7a57a898566a27af32e38c31ed6204358148a796d084c0d2648ddd117a48",
+      "source_id": "p2014-02fc7a57a898",
+      "source_rank": 388
+    },
+    {
+      "name": "Jack Dorsey",
+      "normalized": "jack dorsey",
+      "selection_hash": "0307a2a76b62f0a814dc368f231e6482688ad37d203776dcbcafb5e027f0c301",
+      "source_id": "p2014-0307a2a76b62",
+      "source_rank": 796
+    },
+    {
+      "name": "Shiv Nadar",
+      "normalized": "shiv nadar",
+      "selection_hash": "030eaf3a21fd4b416a98e1ce68cdca4e20d25b7ee8e9955871dce232562dcc37",
+      "source_id": "p2014-030eaf3a21fd",
+      "source_rank": 102
+    },
+    {
+      "name": "Dmitry Troitsky",
+      "normalized": "dmitry troitsky",
+      "selection_hash": "03314c7fe9ad21f710e15596bdcc4d4f3161aac7bcff02e48460dd352f108450",
+      "source_id": "p2014-03314c7fe9ad",
+      "source_rank": 1565
+    },
+    {
+      "name": "Sidney Kimmel",
+      "normalized": "sidney kimmel",
+      "selection_hash": "0341650a565724f8b3ea2e8774254a8a58cc441a39025fe9cb950c708cd97e62",
+      "source_id": "p2014-0341650a5657",
+      "source_rank": 1284
+    },
+    {
+      "name": "Christopher Cline",
+      "normalized": "christopher cline",
+      "selection_hash": "0378f723794015b27adb97f492e92006713f2227b6366a9aed39fa57544e5320",
+      "source_id": "p2014-0378f7237940",
+      "source_rank": 1210
+    },
+    {
+      "name": "Renate Reimann-Haas",
+      "normalized": "renate reimann haas",
+      "selection_hash": "03a2b1cea28509825c0a5cec7cc1f6f2251eb8908c5dbcdc8b40dc91d9bd9c29",
+      "source_id": "p2014-03a2b1cea285",
+      "source_rank": 483
+    },
+    {
+      "name": "Akio Nitori",
+      "normalized": "akio nitori",
+      "selection_hash": "03b015b76341ef4ddfe52bc975083d2557b63ab1ba5de75ce739843d74e83de2",
+      "source_id": "p2014-03b015b76341",
+      "source_rank": 1284
+    },
+    {
+      "name": "Alain Bouchard",
+      "normalized": "alain bouchard",
+      "selection_hash": "03b3a75c18dfc68d66e546e387ce6a67736b696fc3f2d7435f04b7c0481f66bd",
+      "source_id": "p2014-03b3a75c18df",
+      "source_rank": 1036
+    },
+    {
+      "name": "Larry Robbins",
+      "normalized": "larry robbins",
+      "selection_hash": "042f1f39fc2d6107559bade2a6357f111ba8648cb694685b7f83eb346ee0b9d8",
+      "source_id": "p2014-042f1f39fc2d",
+      "source_rank": 1210
+    },
+    {
+      "name": "Lawrence Ho",
+      "normalized": "lawrence ho",
+      "selection_hash": "0430bb6b9b9909b9d8e7f77cce50f387113515dccc1a7a34be6abaa144e8073d",
+      "source_id": "p2014-0430bb6b9b99",
+      "source_rank": 551
+    },
+    {
+      "name": "Richard Kinder",
+      "normalized": "richard kinder",
+      "selection_hash": "04b9065205aa770fe693fc62135c157245b00cffd9fd6c5088ccee07725070df",
+      "source_id": "p2014-04b9065205aa",
+      "source_rank": 130
+    },
+    {
+      "name": "Hajime Satomi",
+      "normalized": "hajime satomi",
+      "selection_hash": "04c212ee7b8e147a9a7aa00785a511da7331dae431de1dd1661c2bed5a84158a",
+      "source_id": "p2014-04c212ee7b8e",
+      "source_rank": 1465
+    }
+  ]
+}

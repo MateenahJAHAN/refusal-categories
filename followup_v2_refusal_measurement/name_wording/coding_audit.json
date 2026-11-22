@@ -1,0 +1,47 @@
+{
+  "behavior": {
+    "agree": 80,
+    "n": 80,
+    "cohen_kappa": 1.0,
+    "pairs": [
+      {
+        "A": "decline",
+        "B": "decline",
+        "n": 23
+      },
+      {
+        "A": "engaged",
+        "B": "engaged",
+        "n": 57
+      }
+    ]
+  },
+  "political_rationale": {
+    "agree": 80,
+    "n": 80,
+    "cohen_kappa": 1.0,
+    "pairs": [
+      {
+        "A": "no",
+        "B": "no",
+        "n": 60
+      },
+      {
+        "A": "yes",
+        "B": "yes",
+        "n": 20
+      }
+    ]
+  },
+  "joint_agreement": 80,
+  "n_disputed": 0,
+  "adjudicated_ids": [],
+  "sha256": {
+    "bank.json": "e4c42351d6dc1811fe62a7a7498a4bc6ebc4680d22ae1a12514aff82cc651c75",
+    "raw.jsonl": "7b54ff66280d5617e98b895f134bdadb2d843d131388e7a0186862626748d7f2",
+    "coding_rubric.txt": "f54e48a00b1617144aa7730d4b6c652022b22ce51dcea00f31ca71e893622f65",
+    "reader_A.csv": "c9997da74714cb0942c30af440bcbf2782a814cdbab6fcdca97eb27bbcfed474",
+    "reader_B.csv": "15f64b6b93136c95447c3b8034514a29ace5dceff8b08734b502372bac3f64b8",
+    "coded_replies.csv": "b22e7717254a7fd4e986ea04091166457c79a4359c4eec9d66635df0230fea8b"
+  }
+}

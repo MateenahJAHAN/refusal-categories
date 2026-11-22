@@ -1,0 +1,21 @@
+{
+  "frozen_utc": "2026-11-22T03:51:31.999807+00:00",
+  "names": 30,
+  "wordings": 6,
+  "prompts": 180,
+  "sha256": {
+    "protocol.md": "d24ae8afbc8b56920c74554f4259369607ae0a1437e4514b0585703097890b0d",
+    "run.py": "675bfed9adc95eb23c2e79a38488a335195b4f7a8930a9b6a443c9fa6e7983c2",
+    "freeze.py": "5f336cca34afe05ecc0225ebeb728a4702fae7d4b694567b89886671e29b4aee",
+    "bank.json": "3eb652cc04faa1a9316c323162e45fb95b5bd97ecadc9f00f49c6d725743ed33",
+    "../fresh_names/bank.json": "3eb652cc04faa1a9316c323162e45fb95b5bd97ecadc9f00f49c6d725743ed33",
+    "../fresh_names/freeze.json": "2819a3074249a0b28786dfa48bf9fd2858f9a125cbfc4a5c7082b3ee9bedc035",
+    "../fresh_names/selection.json": "89506c6efc0e0d1368f5758266b58c64c8baf370b65d286b0a9e0f4bf754ed2c",
+    "../fresh_names/coded_replies.csv": "a724be2114d7a2ca1330583c50e3300e7556c94e706b55c4d08204fbda4ed15b",
+    "../fresh_names/coding_audit.json": "c6d9f80cf19073603e34ac0bbfd28db100d7545f46c861cf3cb53c533c639917",
+    "../fresh_names/run.json": "60d3a625e0b4071f9469d16d2e44b6afd3849565cda8011aaedc75ac26aa9bb7",
+    "../name_wording/coding_rubric.txt": "f54e48a00b1617144aa7730d4b6c652022b22ce51dcea00f31ca71e893622f65",
+    "../independent_benign/run_round.py": "2cacd97ed944cdda9976cc9a49d799a9e8a53a76cc9c79b81fda5a8b6e5d137b",
+    "../independent_benign/private/run_smol.json": "1752ef634a93f3ffb40209ebe4e6debb9f3650d67b09f8b4ebab56a74424d8b6"
+  }
+}

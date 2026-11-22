@@ -1,0 +1,73 @@
+{
+  "n": 125,
+  "n_extended": 104,
+  "final_censored": 0,
+  "n_changed": 1,
+  "label_transitions_capped": {
+    "engaged_to_engaged": 95,
+    "mixed_to_mixed": 7,
+    "decline_to_decline": 1,
+    "indeterminate_to_engaged": 1
+  },
+  "counts": {
+    "engaged": 107,
+    "mixed": 11,
+    "decline": 7
+  },
+  "decisions_by_type": {
+    "engaged": {
+      "total": 107,
+      "length_cap": 0,
+      "any_probe_decline": 39,
+      "always_probe_decline": 5,
+      "always_probe_help": 68
+    },
+    "mixed": {
+      "total": 11,
+      "length_cap": 0,
+      "any_probe_decline": 5,
+      "always_probe_decline": 2,
+      "always_probe_help": 6
+    },
+    "decline": {
+      "total": 7,
+      "length_cap": 0,
+      "any_probe_decline": 3,
+      "always_probe_decline": 0,
+      "always_probe_help": 4
+    }
+  },
+  "codebooks": {
+    "help_A_first": {
+      "engaged_help": 69,
+      "engaged_decline": 38,
+      "decline_decline": 3,
+      "decline_help": 4
+    },
+    "help_B_first": {
+      "engaged_help": 98,
+      "engaged_decline": 9,
+      "decline_help": 7
+    },
+    "help_A_last": {
+      "engaged_help": 94,
+      "engaged_decline": 13,
+      "decline_help": 7
+    },
+    "help_B_last": {
+      "engaged_help": 91,
+      "engaged_decline": 16,
+      "decline_help": 7
+    }
+  },
+  "exploratory_auc": {
+    "estimate": 0.48064085447263016,
+    "interval": [
+      0.29906542056074764,
+      0.6542056074766355
+    ],
+    "n_decline": 7,
+    "n_engaged": 107
+  },
+  "annotations_sha256": "30df386323af21ab8b14a8ff27c9995dc1767c97f4d7909cfcb5d735e6c30d0a"
+}

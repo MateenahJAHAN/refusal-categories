@@ -1,0 +1,21 @@
+# Can an arbitrary answer code change a safety judgment?
+
+November 21, 2026. Written before the model runs below. This local protocol has no external registration.
+
+A binary classification probe can appear to measure willingness to help. Its answer can also depend on whether the action was displayed first, or whether its code was A. We will change the code and line order independently, keeping the request and action descriptions fixed. The model only classifies requests. It never answers an XSTest request.
+
+## Data and prompts
+
+Use all 250 requests marked safe in XSTest, 25 in each of ten types, at upstream revision d7bb5bd738c1fcbc36edd83d5e7d1b71a3e2d84d. No filtering based on model outputs. Include all 72 original harmless wording-study user messages in a separate transfer stratum. Treat its 24 tasks as the units. Preserve the earlier Qwen2.5 responses and their existing refusal flags as a behavioural comparator. The classifier sees the original user message embedded in a different meta-task. This comparator is available only for Qwen2.5 under the original protocol.
+
+Use 12 authored ordinary tasks twice, once with an explicit instruction to choose the action of providing help and once to choose the action of declining. These are known-answer *instruction-following* controls. They test both output actions without asking for unsafe content. They are easier than deciding which action is appropriate. Never tune or withhold the benchmark according to a control result.
+
+For each item cross the letter assigned to providing help (A or B) with whether that action is displayed first or second. Retain the same descriptions, indices, headers, system message and chat template for every item within a model. Perform a fresh independent forward pass for each presentation. Use float32, eval mode and the repository's tokenizer. Use Qwen2.5-1.5B-Instruct at 989aa7980e4cf806f80c7fef2b1adb7bc71aa306 and SmolLM2-1.7B-Instruct at 31b70e2e869a7173562077fd711b654946d38674; if resources prevent completion, report that explicitly. Each unprefixed A and B must encode as one distinct token. Check input formatting, padding, row identity, complete pairing, and finite logits. Save the most likely unconstrained next token and combined probability mass of A and B along with letter log-odds. The standardized decision is whichever of the two codes has higher first-token probability; record and report exact ties if encountered.
+
+## Endpoints
+
+Primary per checkpoint: for each safe item compare the two help-letter assignments at fixed order, separately with help first and last. Count the cases where the decoded action changes. Average the two rates, dividing by 500 paired contrasts. Report how many distinct items changed at either fixed order. Bootstrap whole items within each of the ten benchmark types for a descriptive 95% percentile interval, 10,000 draws, seed 20261121. The benchmark is authored and fixed. The interval describes item composition within the ten types, not precision for a real-world population.
+
+Secondary: compare displayed line order at fixed code, all four help-action rates, item-level stable help/stable decline/mixed calls, mean help-oriented letter log-odds, raw top-token conformance and the competing letters' total probability mass. Report on all three strata separately. For transfer report original refusal flags, item counts with classifier declines for Qwen2.5, and interpret the difference between ready-to-help classification and observed prior refusals. Do not identify individual sensitive prompts or infer an activation mechanism. For controls give correct/total separately for each instructed action and model. No model or task is excluded for poor controls. A canonical A/B ordering and a reversed B/A ordering can differ in familiarity: the swap changes the codebook presentation as a whole, so it cannot identify a pure token-frequency effect.
+
+This protocol studies measurement validity. Similar label effects in ordinary multi-choice benchmarks are established. Any contribution here is the controlled test on harmless safety judgments and the comparison with previously generated answers. A future study would require independent, blinded judgments on direct responses and additional model families before extrapolating to over-refusal.

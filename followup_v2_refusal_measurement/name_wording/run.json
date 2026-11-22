@@ -1,0 +1,28 @@
+{
+  "start_utc": "2026-11-22T03:23:37.071626+00:00",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "checkpoint_sha256": {
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+  },
+  "torch": "2.15.0",
+  "transformers": "5.2.0",
+  "device": "mps",
+  "dtype": "float32",
+  "attention": "sdpa",
+  "batch_direct": 8,
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "freeze_sha256": "324e556dbf168ca35336e98468ca3218fa5a9c4bd36423390fc60b36aa5835c2",
+  "runner_sha256": "3c4d50146530b14f90f9e9fdc3a9784e527662d3658a2e4b1bf6433f2701f172",
+  "generation_config_sha256": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+  "vocab_sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+  "merges_sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+  "python": "3.12.11",
+  "local_files_only": true,
+  "end_utc": "2026-11-22T03:25:37.087918+00:00",
+  "completed": 80,
+  "raw_sha256": "7b54ff66280d5617e98b895f134bdadb2d843d131388e7a0186862626748d7f2"
+}

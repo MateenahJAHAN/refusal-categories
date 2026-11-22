@@ -1,0 +1,14 @@
+{
+  "A": {
+    "displayed_every_record": 182,
+    "browser_autosave_export_restore": "pass",
+    "browser_errors": [],
+    "original_zip_sha256": "5272f54b3b18cd8e076330f70f29af96f917c4577a3d2d04e69e9f10a675e719"
+  },
+  "B": {
+    "displayed_every_record": 182,
+    "browser_autosave_export_restore": "pass",
+    "browser_errors": [],
+    "original_zip_sha256": "a5026f7b218bc8a665a9d3d1c0aa9678058e829067f624a1b2a810ff82f4660f"
+  }
+}

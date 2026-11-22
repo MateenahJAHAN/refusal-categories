@@ -1,0 +1,17 @@
+{
+  "frozen_utc": "2026-11-22T03:23:00.179856+00:00",
+  "names": 10,
+  "arms": 8,
+  "rows": 80,
+  "sha256": {
+    "protocol.md": "a99bb54b022fed1ef5ede028a8a191c0066fe3b804ec1b7b2e4f86532c104227",
+    "bank.json": "e4c42351d6dc1811fe62a7a7498a4bc6ebc4680d22ae1a12514aff82cc651c75",
+    "freeze.py": "fa3048ab3b8631a633a45d26634a7cf552a60dd02a1da662796e865ed2c74983",
+    "../independent_benign/run_round.py": "2cacd97ed944cdda9976cc9a49d799a9e8a53a76cc9c79b81fda5a8b6e5d137b",
+    "../independent_benign/source/bank.json": "83b2c8bfeb52db5c61b51accc8797463989e715b599dc7bd0be68182d4616948",
+    "../independent_benign/private/replies_qwen.jsonl": "10ef484a7c37ef3c2fc8cab49c8cd3d6441e6c16b2a28de13440357a0a37099e",
+    "../independent_benign/private/run_qwen.json": "a594645023465352c287947b859f59fefecc76109ac3b195c062248ee08397e6",
+    "../independent_benign/ai_first_pass/reader_A.csv": "505c3ac9de2c6d223da83702d28c716c6e91f902e82416019253bcee4392261f",
+    "../independent_benign/ai_first_pass/reader_B.csv": "f6de6440b4deda03f7692a67b2c1fd3a024190991b7232885f50fbe104adde8d"
+  }
+}
