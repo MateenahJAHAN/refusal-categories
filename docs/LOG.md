@@ -2,6 +2,8 @@
 
 Mateenah Jahan · BlueDot Technical AI Safety Project · Unit 2
 
+These are the original sprint notes. The final entry considered a shared refusal mechanism. The [subsequent KL review](../README.md#kl-gate-replay) found that every candidate intervention changed predictions on harmless text beyond the retrospective cutoff. The mechanism remains unresolved.
+
 ---
 
 ## Unit 2.2 — Assumptions: what needs to be true for this to work
