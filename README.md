@@ -32,4 +32,4 @@ Intervening at any of the four candidate layers also changed next-token predicti
 
 [Sprint plan](docs/PLAN.md) · [Lab notes](docs/LOG.md) · [Original notebook](notebooks/refusal_categories.ipynb) · [October 24 results, superseded](results.json) · [MIT license](LICENSE)
 
-Mateenah conducted the sprint. AI tools helped prepare the short-answer wording experiment. Codex designed and ran the later benchmark and named-person studies, coded the replies, and drafted the follow-up paper. The independent ratings are AI judgments. [Study contributions](followup_v2_refusal_measurement/manuscript.md#contributions-and-data)
+[Study contributions and scoring roles](CONTRIBUTIONS.md) distinguish the original sprint from the later experiments.
